@@ -50,4 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
         mobileMenuToggle.addEventListener('click', function(){menu.classList.toggle("show"); mobileMenuToggle.classList.toggle("show")})
     }
     
+    const swup = new Swup({
+        plugins: [new SwupSlideTheme()]
+      });
 })

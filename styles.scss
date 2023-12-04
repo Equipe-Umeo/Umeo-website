@@ -35,6 +35,27 @@ src: url(./fonts/Workbench-Regular.otf);
     }
 }
 
+body {
+    overflow-x: hidden;
+  }
+  
+  .transition-fade {
+    opacity: 1;
+    transition: 500ms;
+    transform: translateX(0);
+    transform-origin: left;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  
+  html.is-leaving .transition-fade {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
 //Style du curseur avec le point qui suit
 #mouse {
     position: absolute; 
