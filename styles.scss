@@ -1,0 +1,201 @@
+$yellow: #FFBB33;
+$light-green: #26AB80;
+$dark-green: #105B63;
+@font-face {
+    font-family: workbench-bold;
+    src: url(./fonts/Workbench-Bold.otf);
+}
+@font-face {
+font-family: workbench;
+src: url(./fonts/Workbench-Regular.otf);
+}
+@font-face {
+    font-family: belissio;
+    src: url(./fonts/Belissio.otf);
+}
+
+.workbench{
+    font-family: workbench !important;
+    *{
+        font-family: workbench !important;
+    }
+}
+
+.workbench-bold{
+    font-family: workbench-bold !important;
+    *{
+        font-family: workbench-bold !important;
+    }
+}
+
+.belissio{
+    font-family: belissio !important;
+    *{
+        font-family: belissio !important;
+    }
+}
+
+/* Slightly move main content */
+
+html.is-changing .transition-main {
+    transition: transform 400ms ease-in-out;
+  }
+  
+  html.is-animating.is-leaving .transition-main {
+    transform: translateY(calc(1 * 5vh * var(--overlay-direction, 1)));
+  }
+  
+  html.is-animating.is-rendering .transition-main {
+    transform: translateY(calc(-1 * 5vh * var(--overlay-direction, 1)));
+  }
+  
+  
+  .transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: var(--swup-blue-darker);
+    opacity: 0;
+    transform: translate3d(0, calc(-1 * 100% * var(--overlay-direction, 1)), 0);
+    pointer-events: none;
+  }
+  
+  html.is-changing .transition-overlay {
+    transition: transform 400ms ease-in-out;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-overlay {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  html.is-rendering .transition-overlay {
+    transform: translate3d(0, calc(var(--overlay-direction, 1) * 100%), 0);
+  }
+  
+
+//Style du curseur avec le point qui suit
+#mouse {
+    position: absolute; 
+    background: $yellow; 
+    opacity:.9; width:40px; 
+    height:40px; 
+    border-radius:50px; 
+    top:50%; left:50%; 
+    transform: translate(-50%,-50%) scale(1);  
+}
+
+#mouse.active { animation:bounce .5s ease; }
+@keyframes bounce {
+ 
+ 100%{ transform: translate(-50%,-50%) scale(2); opacity:0; }
+  0%{ transform: translate(-50%,-50%) scale(1); opacity:1; }
+}
+
+//Menu
+header{
+    background-color: $dark-green;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100px;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        li{
+            a{
+                font-size: 14px;
+                color: white;
+                font-family: belissio;
+                &.active{
+                    color: $yellow;
+                }
+            }
+        }
+    }
+    //responsive
+    @media (max-width: 800px) {
+        position: fixed;
+        left: -100vw;
+        width: fit-content;
+        padding: 100px 50px 0 50px !important;
+        height: 100vh;
+        transition: all 0.5s ease-in-out;
+        &.show{
+            left: 0;
+        }
+        ul{
+            flex-direction: column;
+            justify-content: start;
+            li{
+                margin: 10px;
+            }
+        }    
+        #mobile__menu__toggle{
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            span{
+                height: 5px;
+                width: 50px;
+                background-color: $yellow;
+                display: block;
+                border-radius: 5px;
+                margin: 5px;
+                transition: all 0.3s ease-in-out;
+            }
+            &.show{
+                span{
+                    &:nth-of-type(1){
+                        transform: rotate(45deg) translate(22px, 2px);
+                    }
+                    &:nth-of-type(2){
+                        opacity: 0;
+                    }
+                    &:nth-of-type(3){
+                        transform: rotate(-45deg) translate(19px, 0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Boutons
+.button{
+    padding: 13px 25px;
+    border-radius: 5px;
+}
+
+.yellow__bg{
+    background-color: $yellow;
+}
+
+.white__text{
+    color: white !important;
+    a{
+        color: white !important;
+    }
+}
+
+.white__bg{
+    background-color: white;
+}
+
+.black__text{
+    color: black !important;
+    a{
+        color: black !important;
+    }
+}
+
