@@ -235,9 +235,14 @@ header{
 }
 
 .contained{
-    max-width: 85%;
+    max-width: calc(100% - 100px);
     margin: auto;
     position: relative;
+}
+
+.my-auto{
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .mt__20{
@@ -254,6 +259,10 @@ header{
 
 .max__w__50{
     max-width: 50%;
+}
+
+.max__w__500px{
+    max-width: 500px;
 }
 
 .p__20{
@@ -306,6 +315,15 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 3s ease-in-out;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
 }
 
 #home1__img{
@@ -355,4 +373,16 @@ p{
     z-index: -1;
     border-radius: 100%;
     background-color: $yellow;
+}
+
+#home2__circle2{
+    transition: all 0.2s linear;
+    position: absolute;
+    top: 750px;
+    left: -80px;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+    border-radius: 100%;
+    background-color: $light-green;
 }

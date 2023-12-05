@@ -63,13 +63,17 @@ window.addEventListener('DOMContentLoaded', () => {
             const homeScroll = document.documentElement.scrollTop;
             const circle1 = document.getElementById("home1__circle");
             const circle2 = document.getElementById("home1__circle2");
-            circle1.style.top = (10 + 0.1*homeScroll) +"px";
-            circle1.style.right = (-50 - 0.07*homeScroll) +"px";
+            circle1.style.top = (10 + 0.05*homeScroll) +"px";
+            circle1.style.right = (-50 - 0.03*homeScroll) +"px";
             circle2.style.top = (330 + 0*homeScroll) +"px";
-            circle2.style.right = (-10 + 0.06*homeScroll) +"px";
+            circle2.style.right = (-10 + 0.03*homeScroll) +"px";
             const circle3 = document.getElementById("home2__circle");
-            circle3.style.top = (150 + 0.2*homeScroll) +"px";
-            circle3.style.right = (0 + 0.07*homeScroll) +"px";
+            const circle4 = document.getElementById("home2__circle2");
+            circle3.style.top = (150 + 0.1*homeScroll) +"px";
+            circle3.style.left = (50 - 0.03*homeScroll) +"px";
+            circle4.style.top = (750 + 0.05*homeScroll) +"px";
+            circle4.style.left = (-80 + 0.03*homeScroll) +"px";
+            
         })
 
         
