@@ -116,9 +116,16 @@ window.addEventListener('DOMContentLoaded', () => {
     //Animations home
     const homePage = document.getElementById("home");
     if(homePage){
-        const circle1 = document.getElementById("home1__circle");
         document.addEventListener("scroll", ()=>{
-            console.log(document.documentElement.scrollTop)
+            const circle1 = document.getElementById("home1__circle");
+            const circle2 = document.getElementById("home1__circle2");
+            const homeScroll = document.documentElement.scrollTop;
+            circle1.style.top = (10 + 0.1*homeScroll) +"px";
+            circle1.style.right = (-50 - 0.07*homeScroll) +"px";
+            circle2.style.top = (330 + 0*homeScroll) +"px";
+            circle2.style.right = (-10 + 0.06*homeScroll) +"px";
         })
+
+        
     }
 })
