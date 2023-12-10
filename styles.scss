@@ -661,7 +661,12 @@ p{
 
 footer{
     @media (max-width: 800px) {
-        padding: 20px 10px !important;
+        padding: 40px 0px !important;
+    }
+    #footer__logo{
+        @media (max-width: 800px) {
+            width: 100px;
+        }
     }
     #footer__menu{
         li {
@@ -675,6 +680,9 @@ footer{
                 }
             }
         }
+    @media (max-width: 800px) {
+        margin: 40px 0;
+    }
     }
     #footer__infos{
         li{
