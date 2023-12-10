@@ -64,18 +64,30 @@ window.addEventListener('DOMContentLoaded', () => {
             const circle1 = document.getElementById("home1__circle");
             const circle2 = document.getElementById("home1__circle2");
             circle1.style.top = (10 + 0.05*homeScroll) +"px";
-            circle1.style.right = (-50 - 0.03*homeScroll) +"px";
+            circle1.style.right = (10 - 0.03*homeScroll) +"px";
             circle2.style.top = (330 + 0*homeScroll) +"px";
-            circle2.style.right = (-10 + 0.03*homeScroll) +"px";
+            circle2.style.right = (50 + 0.03*homeScroll) +"px";
             const circle3 = document.getElementById("home2__circle");
             const circle4 = document.getElementById("home2__circle2");
             circle3.style.top = (150 + 0.1*homeScroll) +"px";
-            circle3.style.left = (50 - 0.03*homeScroll) +"px";
+            circle3.style.left = (140 - 0.03*homeScroll) +"px";
             circle4.style.top = (750 + 0.05*homeScroll) +"px";
-            circle4.style.left = (-80 + 0.03*homeScroll) +"px";
-            
+            circle4.style.left = (50 + 0.03*homeScroll) +"px";
+            const circle5 = document.getElementById("home3__circle");
+            const circle6 = document.getElementById("home3__circle2");
+            circle5.style.top = (100 - 0.1*(homeScroll/10)) +"px";
+            circle5.style.left = (-100 + 0.1*(homeScroll/10)) +"px";
+            circle6.style.top = (0 + 0.1*(homeScroll/10)) +"px";
+            circle6.style.left = (200 - 0.03*(homeScroll/10)) +"px";
         })
 
+
+    //Sliders
+    new Splide( '#image-carousel', {perPage: 2, perMove: 1,  breakpoints: {
+		800: {
+			perPage: 1,
+		},
+    }} ).mount();
         
     }
 })
