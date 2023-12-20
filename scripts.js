@@ -146,7 +146,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     if(menuItems){
         const currentUrl = window.location.href;
-        if(currentUrl.indexOf("metiers" !== -1)){
+        if(currentUrl.indexOf("metiers") !== -1){
             menuItems.forEach((element, index) => {
                 if(index !== 2){
                     element.classList.remove("active");
