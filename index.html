@@ -1,365 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Umeo</title>
+		<link rel="stylesheet" href="/reset.css">
+		<link rel="stylesheet" href="/styles.css">
+		<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+		<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+		<script defer src="https://unpkg.com/swup@4"></script>
+		<script defer src="https://unpkg.com/@swup/slide-theme@2"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+		<script defer src="/scripts.js"></script>
+		<meta name="view-transition" content="same-origin"/>
+	</head>
+	<div id="mouse"></div>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Uméo</title>
-	<link rel="stylesheet" href="/reset.css">
-	<link rel="stylesheet" href="/styles.css">
-	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
-	<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-	<script defer src="https://unpkg.com/swup@4"></script>
-	<script defer src="https://unpkg.com/@swup/slide-theme@2"></script>
-	<script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-	<script defer src="/scripts.js"></script>
-	<meta name="view-transition" content="same-origin" />
-</head>
-<div id="mouse"></div>
-
-<body id="home">
-	<header>
-		<div id="mobile__menu__toggle">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<ul class="contained">
-			<li>
-				<a href="/" class="active">Accueil</a>
-			</li>
-			<li>
-				<a href="/nous">
-					Qui sommes-nous ?</a>
-			</li>
-			<li>
-				<a href="/page/metiers.html">Nos métiers</a>
-			</li>
-			<li>
-				<a href="/blog">Blog</a>
-			</li>
-			<li>
-				<a href="/contact">Rencontrons-nous</a>
-			</li>
-			<li class="button yellow__bg white__text">
-				<a href="/rejoindre">Rejoins-nous</a>
-			</li>
-			<li class="button white__bg black__text workbench-bold">
-				<a href="/fondation">La fondation</a>
-			</li>
-		</ul>
-	</header>
-	<main id="swup" class="transition-fade">
-		<section class="relative w__full">
-			<div class="contained mt__50">
-				<div class="max__w__50 mobile__full">
-					<h1>L'expertise <br> <span class="ligh__green__text">l'humain</span> en <br> plus </h1>
-					<p>Chez <span class="ligh__green__text"> Umeo </span>, nous offrons une gamme complète de services
-						de
-						consulting pour les industries de la santé
-						:
-						pharmaceutique et dispositifs médicaux. Qu’il s’agisse de stratégie de marché, de développement
-						de
-						produits, de conformité réglementaire ou de tout autre domaine spécifique, nous sommes là pour
-						vous
-						guider.</p>
-					<div class="flex mt__50">
-						<div class="button yellow__bg white__text mr__20">
-							<a class="mobile__text__center" href="/metiers">Nos services</a>
-						</div>
-						<div class="button white__bg black__border black__text workbench-bold">
-							<a class="mobile__text__center" href="/rejoindre">Nous rejoindre</a>
-						</div>
-					</div>
-				</div>
-				<div class="disappear__mobile">
-					<img src="/img/home1.svg" alt="image illustration 1" id="home1__img">
-					<div id="home1__circle"></div>
-					<div id="home1__circle2"></div>
-				</div>
-			</div>
-		</section>
-		<section class="relative">
-			<div class="contained mt__50 flex justify__end">
-				<div class="max__w__50 mobile__full">
-					<h2 class="text__right">L'aventure <br> <span class="ligh__green__text">UMEO</span></h2>
-					<p class="text__right">L'aventure <span class="ligh__green__text">Umeo</span> est née d'un pari fou
-						:
-						créer une société de
-						conseil où les ambitions personnelles et
-						le bien-être ne font qu'un. Comme la pâte à tartiner a besoin de sa tranche de pain, Adrien,
-						Yanis,
-						Laure et Léon forment un quatuor inséparable, prêt à faire des <span
-							class="ligh__green__text">étincelles</span> 😉</p>
-
-					<p class="text__right">Notre entreprise a vu le jour très récemment puisque c’est en 2024 que notre
-						idée
-						est née : créer
-						Uméo.
-						Pour ce faire nous avons décidé de nous lancer dans 2 petites villes (histoire de se faire la
-						main)
-						: Paris et Lyon ont donc été le choix le plus logique.</p>
-
-					<p class="text__right">Une structure qui nous ressemble et place au <span
-							class="ligh__green__text">cœur</span> de ses préoccupations la redéfinition de la
-						relation entre les candidats et les sociétés de conseil (ça c’est balèze !).</p>
-
-					<p class="text__right">L’équipe a fait son nid en plein cœur de Lyon, place Jean Macé (à environ 15m
-						du métro pour les plus
-						sportifs).</p>
-
-					<div class="dark__green__bg round p__40 mt__50 max__w__500px my-auto" id="souhaits">
-						<h3 class="yellow__text text__center">Notre souhait ?</h3>
-						<p class="white__text text__center">Donner vie aux projets de nos candidats, consultants et
-							clients
-							en combinant
-							harmonie et entraide
-							(et tout cela avec le sourire s’il-vous-plaît !).
-						</p>
-
-						<p class="white__text text__center">Votre satisfaction est notre priorité absolue. Pour répondre
-							à
-							vos besoins,
-							notre équipe
-							déploiera son expertise et sa bienveillance et tentera même de surpasser vos attentes. (Et
-							ouais, rien que ça !).</p>
-
-						<p class="white__text text__center">Tout cela auprès des industries de la santé : industries
-							pharmaceutiques et
-							fabricants de
-							dispositifs médicaux.
-						</p>
-					</div>
-				</div>
-				<div class="disappear__mobile">
-					<img src="/img/home2.png" alt="image illustration 2" id="home2__img">
-					<div id="home2__circle"></div>
-					<div id="home2__circle2"></div>
-				</div>
-			</div>
-		</section>
-		<div class="contained mt__100 flex justify__center flex__column items__center">
-			<h2 class="text__right relative">Une équipe <br> <span class="ligh__green__text">survitaminée</span> <img
-					class="absolute" id="unbrella" src="/img/umbrella.png" alt=""></h2>
-		</div>
-		<div class="flex justify__center">
-			<section id="image-carousel" class="splide umeo__team" aria-label="Beautiful Images">
-				<div class="splide__track">
-					<ul class="splide__list team__slider">
-						<li class="splide__slide">
-							<div class="relative">
-								<img class="absolute position__centered" src="/img/adrien.png" alt="">
-								<img src="/img/blob1.svg" alt="">
-							</div>
-							<div class="flex items__center">
-								<div class="yellow__dot mr__20"></div>
-								<h3 class="workbench-bold dark__green__text">Adrien</h3>
-							</div>
-							<p>Breton et fier de l’être ! Au delà de ses compétences en réalisation de galettes et en
-								rénovation, il a eu l’occasion de travailler pendant 5 ans en tant que Business Manager
-								et Directeur d’agence pour une société de conseil aux industries de la santé. Ses
-								galettes n’étant pas si bonnes que ça il décida de rester dans un domaine dans lequel il
-								assure et pour ça rien de mieux que Umeo. 🥞</p>
-						</li>
-						<li class="splide__slide">
-							<div class="relative">
-								<img class="absolute position__centered" src="/img/yanis.png" alt="">
-								<img src="/img/blob2.svg" alt="">
-							</div>
-							<div class="flex items__center">
-								<div class="dark__green__dot mr__20"></div>
-								<h3 class="workbench-bold dark__green__text">Yanis</h3>
-							</div>
-							<p>Ici vous avez l’entrep’runner de l’équipe ! Aussi à l’aise avec une paire de basket aux
-								pieds qu’avec un téléphone dans les mains. Toujours avec le sourire, ce pur produit
-								lyonnais saura vous accompagner dans tous vos projets et cela jusqu’à la ligne
-								d’arrivée. 🏃</p>
-						</li>
-						<li class="splide__slide">
-							<div class="relative">
-								<img class="absolute position__centered" src="/img/leon.png" alt="">
-								<img src="/img/blob3.svg" alt="">
-							</div>
-							<div class="flex items__center">
-								<div class="yellow__dot mr__20"></div>
-								<h3 class="workbench-bold dark__green__text">Léon</h3>
-							</div>
-							<p>Le colombien au grand cœur. Armé de ses plus belles boucles et de ses mocassins. Il met
-								un point d’honneur à mettre les relations humaines au cœur de ses priorités. Qu’il
-								pleuve, vente ou neige vous l’aurez toujours au bout du fil. Eh oui c’est une pointure.
-								👞</p>
-						</li>
-						<li class="splide__slide">
-							<div class="relative">
-								<img class="absolute position__centered" src="/img/laure.png" alt="">
-								<img src="/img/blob2.svg" alt="">
-							</div>
-							<div class="flex items__center">
-								<div class="dark__green__dot mr__20"></div>
-								<h3 class="workbench-bold dark__green__text">Laure</h3>
-							</div>
-							<p> Pour une équipe normalement constituée il faut évidemment une fin connaisseuse de vin.
-								Outre cet aspect, Laure justifie d’une expérience de 8 ans auprès des industries de la
-								santé en tant que consultante en assurance qualité. C’est comme avoir Lionel Messi dans
-								son équipe(le vin en moins)*. 🍷</p>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</div>
-		<div class="contained flex justify__center mt__50">
-			<strong>
-				<p class="text__center">Et bien sur de nombreux autres qui ont rejoint l’équipe depuis. Et toi seras-tu
-					le prochain ? 😉</p>
-			</strong>
-		</div>
-		<section class="dark__green__bg w__full pb__100 pt__20">
-			<div class="contained flex flex__column items__center justify__center mt__50">
-				<h2 class="text__right relative white__text">Une <span class="ligh__green__text">vision</span></h2>
-				<p class="white__text text__center">Il était important pour Uméo de contribuer, à son échelle, à un
-					monde plus humain, plus engagé, où
-					chaque individu peut évoluer, développer ses compétences et même s’épanouir (après tout, pourquoi le
-					travail ne serait-il pas synonyme de plaisir ?). Uméo est une entreprise engagée et te permettra de
-					l’être également si tu en as l’envie. La fondation Umeo mets en place des œuvres sociales et
-					environnementales. Et chacun des « Umees » peut y participer. Si tu souhaites en savoir plus, c’est
-					par là !
-				</p>
-				<div class="button yellow__bg white__text">
-					<a href="/fondation">La fondation</a>
-				</div>
-			</div>
-		</section>
-		<section class="contained mt__50">
-			<div class="flex items__end">
-				<h2 class="">En bref <br> <span class="ligh__green__text">Umeo</span> c'est
-				</h2>
-				<span id="dot1" class="sparkling__dot"></span>
-				<span id="dot2" class="sparkling__dot"></span>
-				<span id="dot3" class="sparkling__dot"></span>
-			</div>
-			<div class="quote relative max__w__800px my-auto mt__100">
-				<strong class="text__center">
-					<p>Notre approche du conseil se distingue par une prédominance de
-						bienveillance et de considération
-						dans chacune de nos actions (bien évidemment teintée d’une dose d'humour). Notre recette de la
-						réussite ? Devenir un acteur majeur du conseil avec innovation et engagements (tout en modestie
-						bien
-						sûr) tout en étant investis dans des causes qui nous sont chères. </p>
-				</strong>
-			</div>
-			<div class="flex justify__between mt__100 mobile__col">
-				<div class="w__half mobile__full">
-					<p>Chez <span class="ligh__green__text">UMEO</span>, nous sommes convaincus que ces valeurs
-						communes constituent les fondements d'une
-						relation
-						de confiance avec nos clients et consultants. Nous permettant ainsi d’aboutir à une évolution
-						positive dans le monde du conseil (d’autant plus que l’authenticité est la meilleure arme pour
-						briser la glace !).</p>
-					<p>Ensemble, nous bâtirons un avenir professionnel <span
-							class="ligh__green__text">enrichissant</span> et porteur de sens.
-						Alors… Si ces valeurs vous font écho et que vous souhaitez vous engager dans cette aventure,
-						vous êtes au bon endroit ! Rejoignez-nous ! Et ensemble, construisons un avenir où la réussite
-						rime avec humanité (et quelques fous rires en prime !). On attend plus que vous.</p>
-				</div>
-				<div class="w__half max__w__500px mobile__full">
-					<ul>
-						<li>
-							<div class="flex items__center justify__end">
-								<div class="dark__green__dot mr__20"></div>
-								<h4 class="w__120px">Bienveillance</h4>
-							</div>
-							<p class="text__right workbench">Instaurer un environnement collaboratif et solidaire car
-								tout seul on
-								va plus vite mais
-								ensemble on va plus loin</p>
-						</li>
-						<li>
-							<div class="flex items__center justify__end">
-								<div class="yellow__dot mr__20"></div>
-								<h4 class="w__120px">Transparence</h4>
-							</div>
-							<p class="text__right workbench">Privilégier une communication claire et ouverte (pas de
-								cachotteries
-								ici, on préfère tout
-								vous dire !)</p>
-						</li>
-						<li>
-							<div class="flex items__center justify__end">
-								<div class="ligh__green__dot mr__20"></div>
-								<h4 class="w__120px">Engagement</h4>
-							</div>
-							<p class="text__right workbench">Vous garantir un accompagnement dévoué et impliqué</p>
-						</li>
-						<li>
-							<div class="flex items__center justify__end">
-								<div class="dark__green__dot mr__20"></div>
-								<h4 class="w__120px">Ambition</h4>
-							</div>
-							<p class="text__right workbench">Innover et de repousser les limites pour toujours viser
-								l'excellence
+	<body>
+		<header></header>
+		<main id="swup" class="transition-fade">
+			<div id="homepage">
+				<section class="relative w__full">
+					<div class="contained mt__50">
+						<div class="max__w__50 mobile__full">
+							<h1>L'expertise
+								<br>
+								<span class="ligh__green__text">l'humain</span>
+								en
+								<br>
+								plus
+							</h1>
+							<p>Chez
+								<span class="ligh__green__text">
+									Umeo
+								</span>, nous offrons une gamme complète de services
+																																																																																																														de consulting pour les industries de la santé : pharmaceutique et dispositifs médicaux. Nous
+																																																																																																														sommes là pour vous aider sur toute la chaine de valeur du produit, du développement à la
+																																																																																																														production en passant par la qualité et le réglementaire. Et tout cela dans la bonne humeur !
 							</p>
-						</li>
-					</ul>
+							<div class="flex mt__50">
+								<div class="button yellow__bg white__text mr__20">
+									<a class="mobile__text__center" href="/metiers">Nos services</a>
+								</div>
+								<div class="button white__bg black__border black__text workbench-bold">
+									<a class="mobile__text__center" href="/rejoindre">Nous rejoindre</a>
+								</div>
+							</div>
+						</div>
+						<div class="disappear__mobile">
+							<img src="/img/home1.svg" alt="image illustration 1" id="home1__img">
+							<div id="home1__circle"></div>
+							<div id="home1__circle2"></div>
+						</div>
+					</div>
+				</section>
+				<section class="relative">
+					<div class="contained mt__50 flex justify__end">
+						<div class="max__w__50 mobile__full">
+							<h2 class="text__right">L'aventure
+								<br>
+								<span class="ligh__green__text">UMEO</span>
+							</h2>
+							<p class="text__right">L'aventure
+								<span class="ligh__green__text">Umeo</span>
+								est née d'un pari fou
+																																																																																																														:
+																																																																																																														créer une société de
+																																																																																																														conseil où les ambitions personnelles et
+																																																																																																														le bien-être ne font qu'un. Comme la pâte à tartiner a besoin de sa tranche de pain, Adrien,
+																																																																																																														Yanis,
+																																																																																																														Laure et Léon forment un quatuor inséparable, prêt à faire des
+								<span class="ligh__green__text">étincelles</span>
+								😉</p>
+
+							<p class="text__right">Notre entreprise a vu le jour très récemment puisque c’est en 2024 que notre
+																																																																																																														idée
+																																																																																																														est née : créer
+																																																																																																														Umeo.
+																																																																																																														Pour ce faire nous avons décidé de nous lancer dans 2 petites villes (histoire de se faire la
+																																																																																																														main)
+																																																																																																														: Paris et Lyon ont donc été le choix le plus logique.</p>
+
+							<p class="text__right">Une structure qui nous ressemble et place au
+								<span class="ligh__green__text">cœur</span>
+								de ses préoccupations la redéfinition de la
+																																																																																																														relation entre les candidats et les sociétés de conseil (ça c’est balèze !).</p>
+
+							<p class="text__right">L’équipe a fait son nid en plein cœur de Lyon, place Jean Macé (à environ 15m
+																																																																																																														du métro pour les plus
+																																																																																																														sportifs).</p>
+
+							<div class="dark__green__bg round p__40 mt__50 max__w__500px my-auto" id="souhaits">
+								<h3 class="yellow__text text__center">Notre souhait ?</h3>
+								<p class="white__text text__center">Donner vie aux projets de nos candidats, consultants et
+																																																																																																																												clients
+																																																																																																																												en combinant
+																																																																																																																												harmonie et entraide
+																																																																																																																												(et tout cela avec le sourire s’il-vous-plaît !).
+								</p>
+
+								<p class="white__text text__center">Votre satisfaction est notre priorité absolue. Pour répondre
+																																																																																																																												à
+																																																																																																																												vos besoins,
+																																																																																																																												notre équipe
+																																																																																																																												déploiera son expertise et sa bienveillance et tentera même de surpasser vos attentes. (Et
+																																																																																																																												ouais, rien que ça !).</p>
+
+								<p class="white__text text__center">Tout cela auprès des industries de la santé : industries
+																																																																																																																												pharmaceutiques et
+																																																																																																																												fabricants de
+																																																																																																																												dispositifs médicaux.
+								</p>
+							</div>
+						</div>
+						<div class="disappear__mobile">
+							<img src="/img/home2.png" alt="image illustration 2" id="home2__img">
+							<div id="home2__circle"></div>
+							<div id="home2__circle2"></div>
+						</div>
+					</div>
+				</section>
+				<div class="contained mt__100 flex justify__center flex__column items__center">
+					<h2 class="text__right relative">Une équipe
+						<br>
+						<span class="ligh__green__text">survitaminée</span>
+						<img class="absolute" id="unbrella" src="/img/umbrella.png" alt=""></h2>
+				</div>
+				<div class="flex justify__center">
+					<section id="image-carousel" class="splide umeo__team" aria-label="Beautiful Images">
+						<div class="splide__track">
+							<ul class="splide__list team__slider">
+								<li class="splide__slide">
+									<div class="relative">
+										<img class="absolute position__centered" src="/img/adrien.png" alt="">
+										<img src="/img/blob1.svg" alt="">
+									</div>
+									<div class="flex items__center">
+										<div class="yellow__dot mr__20"></div>
+										<h3 class="workbench-bold dark__green__text">Adrien</h3>
+									</div>
+									<p>Breton et fier de l’être ! Au delà de ses compétences en réalisation de galettes et en
+																																																																																																																																										rénovation, il a eu l’occasion de travailler pendant 5 ans en tant que Business Manager
+																																																																																																																																										et Directeur d’agence pour une société de conseil aux industries de la santé. Ses
+																																																																																																																																										galettes n’étant pas si bonnes que ça il décida de rester dans un domaine dans lequel il
+																																																																																																																																										assure et pour ça rien de mieux que Umeo. 🥞</p>
+								</li>
+								<li class="splide__slide">
+									<div class="relative">
+										<img class="absolute position__centered" src="/img/yanis.png" alt="">
+										<img src="/img/blob2.svg" alt="">
+									</div>
+									<div class="flex items__center">
+										<div class="dark__green__dot mr__20"></div>
+										<h3 class="workbench-bold dark__green__text">Yanis</h3>
+									</div>
+									<p>Ici vous avez l’entrep’runner de l’équipe ! Aussi à l’aise avec une paire de basket aux
+																																																																																																																																										pieds qu’avec un téléphone dans les mains. Toujours avec le sourire, ce pur produit
+																																																																																																																																										lyonnais saura vous accompagner dans tous vos projets et cela jusqu’à la ligne
+																																																																																																																																										d’arrivée. 🏃</p>
+								</li>
+								<li class="splide__slide">
+									<div class="relative">
+										<img class="absolute position__centered" src="/img/leon.png" alt="">
+										<img src="/img/blob3.svg" alt="">
+									</div>
+									<div class="flex items__center">
+										<div class="yellow__dot mr__20"></div>
+										<h3 class="workbench-bold dark__green__text">Léon</h3>
+									</div>
+									<p>Le colombien au grand cœur. Armé de ses plus belles boucles et de ses mocassins. Il met
+																																																																																																																																										un point d’honneur à mettre les relations humaines au cœur de ses priorités. Qu’il
+																																																																																																																																										pleuve, vente ou neige vous l’aurez toujours au bout du fil. Eh oui c’est une pointure.
+																																																																																																																																										👞</p>
+								</li>
+								<li class="splide__slide">
+									<div class="relative">
+										<img class="absolute position__centered" src="/img/laure.png" alt="">
+										<img src="/img/blob2.svg" alt="">
+									</div>
+									<div class="flex items__center">
+										<div class="dark__green__dot mr__20"></div>
+										<h3 class="workbench-bold dark__green__text">Laure</h3>
+									</div>
+									<p>
+										Pour une équipe normalement constituée il faut évidemment une fin connaisseuse de vin.
+																																																																																																																																										Outre cet aspect, Laure justifie d’une expérience de 8 ans auprès des industries de la
+																																																																																																																																										santé en tant que consultante en assurance qualité. C’est comme avoir Lionel Messi dans
+																																																																																																																																										son équipe(le vin en moins)*. 🍷</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+				<div class="contained flex justify__center mt__50">
+					<strong>
+						<p class="text__center">Et bien sur de nombreux autres qui ont rejoint l’équipe depuis. Et toi seras-tu
+																																																																																																le prochain ? 😉</p>
+					</strong>
+				</div>
+				<section class="dark__green__bg w__full pb__100 pt__20">
+					<div class="contained flex flex__column items__center justify__center mt__50">
+						<h2 class="text__right relative white__text">Une
+							<span class="ligh__green__text">vision</span>
+						</h2>
+						<p class="white__text text__center">Il était important pour Umeo de contribuer, à son échelle, à un
+																																																																																																monde plus humain, plus engagé, où
+																																																																																																chaque individu peut évoluer, développer ses compétences et même s’épanouir (après tout, pourquoi le
+																																																																																																travail ne serait-il pas synonyme de plaisir ?). Umeo est une entreprise engagée et te permettra de
+																																																																																																l’être également si tu en as l’envie. La fondation Umeo mets en place des œuvres sociales et
+																																																																																																environnementales. Et chacun des « Umees » peut y participer. Si tu souhaites en savoir plus, c’est
+																																																																																																par là !
+						</p>
+						<div class="button yellow__bg white__text">
+							<a href="/fondation">La fondation</a>
+						</div>
+					</div>
+				</section>
+				<section class="contained mt__50">
+					<div class="flex items__end">
+						<h2 class="">En bref
+							<br>
+							<span class="ligh__green__text">Umeo</span>
+							c'est
+						</h2>
+						<!-- <span id="dot1" class="sparkling__dot"></span>
+																																																																																		<span id="dot2" class="sparkling__dot"></span>
+																																																																																		<span id="dot3" class="sparkling__dot"></span> -->
+						<div class="dot__container" class="snippet" data-title="dot-typing">
+							<div class="stage">
+								<div class="dot-typing"></div>
+							</div>
+						</div>
+					</div>
+					<div class="quote relative max__w__800px my-auto mt__100">
+						<strong class="text__center">
+							<p>Notre approche du conseil se distingue par une prédominance de
+																																																																																																														bienveillance et de considération
+																																																																																																														dans chacune de nos actions (bien évidemment teintée d’une dose d'humour). Notre recette de la
+																																																																																																														réussite ? Devenir un acteur majeur du conseil avec innovation et engagements (tout en modestie
+																																																																																																														bien
+																																																																																																														sûr) tout en étant investis dans des causes qui nous sont chères.
+							</p>
+						</strong>
+					</div>
+					<div class="flex justify__between mt__100 mobile__col">
+						<div class="w__half mobile__full">
+							<p>Chez
+								<span class="ligh__green__text">UMEO</span>, nous sommes convaincus que ces valeurs
+																																																																																																																											communes constituent les fondements d'une
+																																																																																																																											relation
+																																																																																																																											de confiance avec nos clients et consultants. Nous permettant ainsi d’aboutir à une évolution
+																																																																																																																											positive dans le monde du conseil (d’autant plus que l’authenticité est la meilleure arme pour
+																																																																																																																											briser la glace !).</p>
+							<p>Ensemble, nous bâtirons un avenir professionnel
+								<span class="ligh__green__text">enrichissant</span>
+								et porteur de sens.
+																																																																																																														Alors… Si ces valeurs vous font écho et que vous souhaitez vous engager dans cette aventure,
+																																																																																																														vous êtes au bon endroit ! Rejoignez-nous ! Et ensemble, construisons un avenir où la réussite
+																																																																																																														rime avec humanité (et quelques fous rires en prime !). On attend plus que vous.</p>
+						</div>
+						<div class="w__half max__w__500px mobile__full">
+							<ul>
+								<li>
+									<div class="flex items__center justify__end">
+										<div class="dark__green__dot mr__20"></div>
+										<h4 class="w__120px">Bienveillance</h4>
+									</div>
+									<p class="text__right workbench">Instaurer un environnement collaboratif et solidaire car
+																																																																																																																																										tout seul on
+																																																																																																																																										va plus vite mais
+																																																																																																																																										ensemble on va plus loin</p>
+								</li>
+								<li>
+									<div class="flex items__center justify__end">
+										<div class="yellow__dot mr__20"></div>
+										<h4 class="w__120px">Transparence</h4>
+									</div>
+									<p class="text__right workbench">Privilégier une communication claire et ouverte (pas de
+																																																																																																																																										cachotteries
+																																																																																																																																										ici, on préfère tout
+																																																																																																																																										vous dire !)</p>
+								</li>
+								<li>
+									<div class="flex items__center justify__end">
+										<div class="ligh__green__dot mr__20"></div>
+										<h4 class="w__120px">Engagement</h4>
+									</div>
+									<p class="text__right workbench">Vous garantir un accompagnement dévoué et impliqué</p>
+								</li>
+								<li>
+									<div class="flex items__center justify__end">
+										<div class="dark__green__dot mr__20"></div>
+										<h4 class="w__120px">Ambition</h4>
+									</div>
+									<p class="text__right workbench">Innover et de repousser les limites pour toujours viser
+																																																																																																																																										l'excellence
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<div class="hom__4__container relative overflow__hidden">
+					<img src="/img/home3.png" class="w__full mt__100" alt="" style="margin-bottom: -2px;">
+					<div id="home3__circle"></div>
+					<div id="home3__circle2"></div>
 				</div>
 			</div>
-		</section>
-		<div class="hom__4__container relative overflow__hidden">
-			<img src="/img/home3.png" class="w__full mt__100" alt="" style="margin-bottom: -2px;">
-			<div id="home3__circle"></div>
-			<div id="home3__circle2"></div>
-		</div>
-	</main>
-	<footer class="dark__green__bg w__full p__40">
-		<div class="contained flex items__center justify__between mobile__col">
-			<div class="w__third mobile__full">
-				<img id="footer__logo" src="/img/logo.png" alt="">
-			</div>
-			<div class="w__third mobile__full">
-				<ul id="footer__menu" class="flex flex__column mobile__items__center">
-					<li>
-						<a href="/contact">Rencontrons-nous</a>
-					</li>
-					<li>
-						<a href="/rejoindre">Nous rejoindre</a>
-					</li>
-
-					<li>
-						<a href="/page/metiers.html">Nos métiers</a>
-					</li>
-					<li>
-						<a href="/nous">
-							Qui sommes-nous ?</a>
-					</li>
-					<li>
-						<a href="/blog">Blog</a>
-					</li>
-					<li>
-						<a href="/fondation">La fondation</a>
-					</li>
-				</ul>
-			</div>
-			<div class="w__third mobile__full">
-				<ul id="footer__infos">
-					<li class="flex items__center">
-						<img src="/img/localisation.svg" alt="">
-						<p>12 place de la Concorde <br> 75000 Paris</p>
-					</li>
-					<li class="flex items__center">
-						<img src="/img/localisation.svg" alt="">
-						<p>12 place de la Concorde <br> 69000 Lyon</p>
-					</li>
-					<li class="flex items__center">
-						<img src="/img/phone2.svg" alt="">
-						<a href="tel: 02 69 69 69 69">02 69 69 69 69</a>
-					</li>
-					<li class="flex items__center">
-						<img src="/img/email.svg" alt="">
-						<a href="mailto: contact@umeo.consulting">contact@umeo.consulting</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</footer>
-</body>
+		</main>
+		<footer></footer>
+	</body>
 
 </html>

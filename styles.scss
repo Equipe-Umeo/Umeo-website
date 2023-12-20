@@ -114,7 +114,7 @@ header{
         height: 100%;
         li{
             a{
-                font-size: 14px;
+                font-size: 16px;
                 color: white;
                 font-family: belissio;
                 transition: all 0.2s ease-in-out;
@@ -264,6 +264,11 @@ header{
     border-radius: 5px;
 }
 
+.yellow__border{
+    border: 1px solid $yellow;
+    border-radius: 5px;
+}
+
 .yellow__text{
     color: $yellow !important;
     a{
@@ -309,12 +314,19 @@ header{
     margin-left: auto;
 }
 
+.m__10{
+    margin: 10px;
+}
+
 .mt__20{
     margin-top: 20px;
 }
 
 .mr__20{
     margin-right: 20px;
+}
+.mr__50{
+    margin-right: 50px;
 }
 
 .mt__50{
@@ -323,6 +335,10 @@ header{
 
 .mt__100{
     margin-top: 100px;
+}
+
+.mb__50{
+    margin-bottom: 50px;
 }
 
 .max__w__50{
@@ -412,6 +428,30 @@ p{
     }
 }
 
+main{
+    #metiers{
+        ul{
+            li{
+                position: relative;
+                width: fit-content;
+                margin-left: 15px;
+                &::before {
+                    content: "◦"; 
+                    font-size: 30px;
+                    color: $yellow;
+                    display: inline-block; 
+                    position: absolute;
+                    left: -15px;
+                }
+                p{
+                    margin-bottom: 0;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+}
+
 .text__right{
     text-align: right;
 }
@@ -444,6 +484,12 @@ p{
 .round__box{
     border-radius: 100px;
     padding: 10px 100px;
+}
+
+body{
+    &:has(#metiers){
+        background: $dark-green;
+    }
 }
 
 #home1__img{
@@ -574,33 +620,78 @@ p{
     }
 }
 
-.sparkling__dot{
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    background-color: $light-green;
-    margin: 0 5px;
+// .sparkling__dot{
+//     width: 20px;
+//     height: 20px;
+//     border-radius: 100%;
+//     background-color: $light-green;
+//     margin: 0 5px;
+//     margin-bottom: 50px;
+// }
+
+// #dot1{
+//     animation: 4s blink ease infinite;
+// }
+
+// #dot2{
+//     animation: 4s blink ease 1s infinite;
+// }
+
+// #dot3{
+//     animation: 4s blink ease 2s infinite;
+// }
+
+// @keyframes blink {
+//     from, to {
+//       opacity: 0;
+//     }
+//     50% {
+//       opacity: 1;
+//     }
+//   }
+
+/**
+ * ==============================================
+ * Dot Typing
+ * ==============================================
+ */
+ .dot__container{
     margin-bottom: 50px;
-}
-
-#dot1{
-    animation: 4s blink ease infinite;
-}
-
-#dot2{
-    animation: 4s blink ease 1s infinite;
-}
-
-#dot3{
-    animation: 4s blink ease 2s infinite;
-}
-
-@keyframes blink {
-    from, to {
-      opacity: 0;
+    margin-left: 30px;
+ }
+ .dot-typing {
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: $light-green;
+    color: $light-green;
+    box-shadow: 9984px 0 0 0 $light-green, 9999px 0 0 0 $light-green, 10014px 0 0 0 $light-green;
+    animation: dot-typing 1s infinite linear;
+  }
+  
+  @keyframes dot-typing {
+    0% {
+      box-shadow: 9984px 0 0 0 $light-green, 9999px 0 0 0 $light-green, 10014px 0 0 0 $light-green;
+    }
+    16.667% {
+      box-shadow: 9984px -10px 0 0 $light-green, 9999px 0 0 0 $light-green, 10014px 0 0 0 $light-green;
+    }
+    33.333% {
+      box-shadow: 9984px 0 0 0 $light-green, 9999px 0 0 0 $light-green, 10014px 0 0 0 $light-green;
     }
     50% {
-      opacity: 1;
+      box-shadow: 9984px 0 0 0 $light-green, 9999px -10px 0 0 $light-green, 10014px 0 0 0 $light-green;
+    }
+    66.667% {
+      box-shadow: 9984px 0 0 0 $light-green, 9999px 0 0 0 $light-green, 10014px 0 0 0 $light-green;
+    }
+    83.333% {
+      box-shadow: 9984px 0 0 0 $light-green, 9999px 0 0 0 $light-green, 10014px -10px 0 0 $light-green;
+    }
+    100% {
+      box-shadow: 9984px 0 0 0 $light-green, 9999px 0 0 0 $light-green, 10014px 0 0 0 $light-green;
     }
   }
 
@@ -722,6 +813,18 @@ footer{
 
 .mobile__text__center{
     @media (max-width: 800px) {
+        text-align: center;
+    }
+}
+
+#metiers{
+    background-color: #105B63;
+    min-height: calc(100vh - 414px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2{
+        font-size: 40px;
         text-align: center;
     }
 }
