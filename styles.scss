@@ -329,6 +329,18 @@ header{
     margin-right: 50px;
 }
 
+.ml__50{
+    margin-left: 50px;
+}
+
+.ml__100{
+    margin-left: 100px;
+}
+
+.ml__200{
+    margin-left: 200px;
+}
+
 .mt__50{
     margin-top: 50px;
 }
@@ -339,6 +351,10 @@ header{
 
 .mb__50{
     margin-bottom: 50px;
+}
+
+.w__50{
+    width: 50%;
 }
 
 .max__w__50{
@@ -827,4 +843,17 @@ footer{
         font-size: 40px;
         text-align: center;
     }
+}
+
+#candidat_content{
+    height: 300px;
+}
+
+#candidate_blob{
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
