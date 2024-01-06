@@ -60,7 +60,31 @@
 						nous attendons 🙂</p>
 				</strong>
 			</div>
-
+		</section>
+		<section class="relative p__y__100 mb__-100">
+			<div class="contained grey__bg semi__rounded p__x__40 pb__50 max__w__800px mb__50">
+				<h2 class="medium__title dark__green__text">Propose nous tes talents</h2>
+				<form class="flex flex__column items__center" name="rejoindre__form" id="rejoindre__form" netlify>
+					<div class="flex items__center w__full">
+						<label class="w__half"><span> Nom </span><input type="text" name="nom" /></label>
+						<label class="w__half"><span> Prénom </span><input type="text" name="prenom" /></label>
+					</div>
+					<div class="flex items__center w__full">
+						<label class="w__half"><span> Email </span><input type="email" name="email" /></label>
+						<label class="w__half"><span> Téléphone </span><input type="text" name="tel" /></label>
+					</div>
+					<div class="flex items__center w__full">
+						<label class="w__full"><span> Joindre un document </span><input type="file" multiple
+								class="inputfile" name="docs" /></label>
+					</div>
+					<div class="flex items__center w__full">
+						<label class="w__full flex flex__column"><span> Votre message </span><textarea
+								name="msg"></textarea></label>
+					</div>
+					<button class="button dark__green__bg white__text mt__20" type="submit">Envoyer</button>
+				</form>
+			</div>
+			<img id="contact__img" src="/img/form_img.png" alt="">
 		</section>
 	</main>
 	<footer></footer>

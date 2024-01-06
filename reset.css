@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input, textarea {
 	scroll-behavior: smooth;
 	margin: 0;
 	padding: 0;
@@ -49,4 +49,11 @@ table {
 }
 a{
 	text-decoration: none;
+}
+
+button{
+	outline: none;
+	border: none;
+	display: block;
+	padding: 13px 25px;
 }

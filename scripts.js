@@ -57,25 +57,15 @@ window.addEventListener('DOMContentLoaded', () => {
         <li>
             <a id="home" class="menu__item active" href="/">Accueil</a>
         </li>
-        <li>
-            <a id="nous" class="menu__item" href="/page/nous">
-                Qui sommes-nous ?</a>
-        </li>
+        
         <li>
             <a id="metier" class="menu__item" href="/page/metiers.html">Nos services</a>
         </li>
-        <li>
-            <a id="blog" class="menu__item" href="/page/blog.html">Blog</a>
-        </li>
-        <li>
-            <a id="contact" class="menu__item" href="/page/rencontre.html">Rencontrons-nous</a>
-        </li>
+        
         <li class="button yellow__bg white__text">
             <a id="rejoindre" class="menu__item" href="/page/rejoindre.html">Rejoins-nous</a>
         </li>
-        <li class="button white__bg black__text workbench-bold">
-            <a id="fondation" class="menu__item" href="/page/fondation.html">La fondation</a>
-        </li>
+       
     </ul>`
     }
 
@@ -153,6 +143,11 @@ window.addEventListener('DOMContentLoaded', () => {
                 } else {
                     element.classList.add("active");
                 }
+            })
+        } 
+        if(currentUrl.indexOf("rejoindre") !== -1){
+            menuItems.forEach((element, index) => {
+                    element.classList.remove("active");
             })
         } 
 
