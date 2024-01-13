@@ -24,13 +24,13 @@
 			<div class="contained flex flex__column justify__center items__center">
 				<h1>Envie de
 					<br>
-					<span class="ligh__green__text ml__100">rejoindre</span>
+					<span class="ligh__green__text ml__100 mobile__no__margin">rejoindre</span>
 					<br>
-					<span class="ml__200">l'aventure ?</span>
+					<span class="ml__200 mobile__no__margin">l'aventure ?</span>
 				</h1>
 			</div>
-			<div class="contained flex mt__50">
-				<div class="max__w__50">
+			<div class="contained flex mt__50 mobile__col mobile__items__center">
+				<div class="max__w__50 mobile__full">
 					<p>
 						Chez <span class="ligh__green__text">UMEO</span>, nous ne recrutons pas simplement des
 						collaborateurs pour leurs compétences,
@@ -49,7 +49,7 @@
 						de nos collaborateurs. Nous sommes persuadés que tu as autant à nous apporter que nous.
 					</p>
 				</div>
-				<div class="w__50 relative flex justify__center">
+				<div class="w__50 mobile__full relative flex justify__center mobile__mt__50">
 					<img src="/img/blob3.svg" alt="" id="candidate_blob">
 					<img src="../img/candidat1.png" alt="candidat content" id="candidat_content">
 				</div>
@@ -61,24 +61,28 @@
 				</strong>
 			</div>
 		</section>
-		<section class="relative p__y__100 mb__-100">
-			<div class="contained grey__bg semi__rounded p__x__40 pb__50 max__w__800px mb__50">
+		<section class="relative p__y__100 mb__-100 flex justify__center items__center mobile__full">
+			<div class="contained grey__bg semi__rounded p__x__40 pb__50 max__w__800px mb__50 mobile__full">
 				<h2 class="medium__title dark__green__text">Propose nous tes talents</h2>
-				<form class="flex flex__column items__center" name="rejoindre__form" id="rejoindre__form" netlify>
-					<div class="flex items__center w__full">
-						<label class="w__half"><span> Nom </span><input type="text" name="nom" /></label>
-						<label class="w__half"><span> Prénom </span><input type="text" name="prenom" /></label>
+				<form class="p__20 flex flex__column items__center" name="rejoindre__form" id="rejoindre__form" netlify>
+					<div class="flex items__center w__full mobile__col">
+						<label class="w__half mobile__w__full "><span> Nom </span><input type="text"
+								name="nom" /></label>
+						<label class="w__half mobile__w__full"><span> Prénom </span><input type="text"
+								name="prenom" /></label>
 					</div>
-					<div class="flex items__center w__full">
-						<label class="w__half"><span> Email </span><input type="email" name="email" /></label>
-						<label class="w__half"><span> Téléphone </span><input type="text" name="tel" /></label>
+					<div class="flex items__center w__full mobile__col">
+						<label class="w__half mobile__w__full"><span> Email </span><input type="email"
+								name="email" /></label>
+						<label class="w__half mobile__w__full"><span> Téléphone </span><input type="text"
+								name="tel" /></label>
 					</div>
-					<div class="flex items__center w__full">
+					<div class="flex items__center w__full mobile__col">
 						<label class="w__full"><span> Joindre un document </span><input type="file" multiple
 								class="inputfile" name="docs" /></label>
 					</div>
 					<div class="flex items__center w__full">
-						<label class="w__full flex flex__column"><span> Votre message </span><textarea
+						<label class="w__full flex flex__column mobile__w__full"><span> Votre message </span><textarea
 								name="msg"></textarea></label>
 					</div>
 					<button class="button dark__green__bg white__text mt__20" type="submit">Envoyer</button>

@@ -107,9 +107,9 @@ window.addEventListener('DOMContentLoaded', () => {
 					<ul id="footer__infos">
 						<li class="flex items__center">
 							<img src="/img/localisation.svg" alt="">
-							<p>12 place de la Concorde
+							<p>58 Rue de Monceau
 								<br>
-								75000 Paris</p>
+								75008 Paris</p>
 						</li>
 						<li class="flex items__center">
 							<img src="/img/localisation.svg" alt="">

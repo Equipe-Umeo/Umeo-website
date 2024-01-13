@@ -299,6 +299,10 @@ header{
     }
 }
 
+.filter__to__white{
+    filter: brightness(0) invert(1);;
+}
+
 .contained{
     margin: auto;
     max-width: 1400px;
@@ -337,7 +341,9 @@ header{
 .mr__50{
     margin-right: 50px;
 }
-
+.mr__200{
+    margin-right: 200px;
+}
 .ml__50{
     margin-left: 50px;
 }
@@ -380,6 +386,10 @@ header{
 
 .max__w__800px{
     max-width: 800px;
+}
+
+.h__fit{
+    height: fit-content;
 }
 
 .w__full{
@@ -843,10 +853,28 @@ footer{
     }
 }
 
+.mobile__no__margin{
+    @media (max-width: 800px) {
+       margin: 0;
+    }
+}
+
 .mobile__full{
     @media (max-width: 800px) {
         max-width: 100%;
         width: fit-content;
+    }
+}
+
+.mobile__w__full{
+    @media (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+.tablet__full{
+    @media (max-width: 1200px) {
+        max-width: 100%;
     }
 }
 
@@ -856,9 +884,21 @@ footer{
     }
 }
 
+.tablet__col{
+    @media (max-width: 1200px) {
+        flex-direction: column;
+    }
+}
+
 .mobile__items__center{
     @media (max-width: 800px) {
         align-items: center;
+    }
+}
+
+.mobile__mt__50{
+    @media (max-width: 800px) {
+        margin-top: 50px;
     }
 }
 
@@ -940,4 +980,56 @@ form{
     top: 40px;
     height: 100%;
     z-index: -1;
+}
+
+.metier__illustration{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.metier__illustration__right{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    aspect-ratio: 0.4;
+    border-radius: 500px;
+    overflow: hidden;
+    max-height: 100%;
+    height: 100%;
+    @media (max-width: 1200px) {
+        margin: 20px auto;
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        left: 0;
+        aspect-ratio: 1;
+    }
+}
+
+.metier__illustration__left{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    aspect-ratio: 0.4;
+    border-radius: 500px;
+    overflow: hidden;
+    max-height: 100%;
+    height: 100%;
+    @media (max-width: 1200px) {
+        margin: 20px auto;
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1;
+        max-width: 500px;
+        left: 0;
+        }
+}
+
+.ce__img{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
