@@ -503,14 +503,13 @@ main{
             li{
                 position: relative;
                 width: fit-content;
-                padding-left: 15px;
+                display: flex;
                 &::before {
                     content: "◦"; 
                     font-size: 30px;
                     color: $yellow;
                     display: inline-block; 
-                    position: absolute;
-                    left: 0px;
+                    margin-right: 10px;
                 }
                 p{
                     margin-bottom: 0;
