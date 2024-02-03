@@ -147,6 +147,12 @@ window.addEventListener('DOMContentLoaded', () => {
            element.addEventListener("click", function(){
                 menuItems.map(element => element.classList.remove("active")); 
                 element.classList.add("active")
+                const mobileMenuToggle = document.getElementById("mobile__menu__toggle");
+                const menu = document.getElementsByTagName("header")[0];
+                if(mobileMenuToggle && menu){
+                    menu.classList.remove("show"); 
+                    mobileMenuToggle.classList.remove("show")
+                }
            })
         })
     }
