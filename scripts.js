@@ -48,6 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementsByTagName('header')[0];
     if(header){
         header.innerHTML = `
+        <img src="/img/logo.png" id="header_logo" alt="">
         <div id="mobile__menu__toggle">
 				<span></span>
 				<span></span>
@@ -82,24 +83,15 @@ window.addEventListener('DOMContentLoaded', () => {
 				<div class="w__third mobile__full">
 					<ul id="footer__menu" class="flex flex__column mobile__items__center">
 						<li>
-							<a href="/contact">Rencontrons-nous</a>
-						</li>
-						<li>
-							<a href="/rejoindre">Nous rejoindre</a>
+							<a href="/page/rejoindre.html">Nous rejoindre</a>
 						</li>
 
 						<li>
 							<a href="/page/metiers.html">Nos services</a>
 						</li>
 						<li>
-							<a href="/nous">
+							<a href="/">
 								Qui sommes-nous ?</a>
-						</li>
-						<li>
-							<a href="/blog">Blog</a>
-						</li>
-						<li>
-							<a href="/fondation">La fondation</a>
 						</li>
 					</ul>
 				</div>
