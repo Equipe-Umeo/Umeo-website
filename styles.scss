@@ -413,6 +413,11 @@ header{
     padding-right: 40px;
 }
 
+.p__y__50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .p__y__100 {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -920,6 +925,35 @@ footer{
     }
 }
 
+.crazy_img{
+    opacity: 0;
+}
+
+.normal_img, .crazy_img{
+    transition: all 0.3s ease-in-out
+}
+
+.splide__slide{
+    >.relative{
+        &:hover{
+            .normal_img{
+                opacity: 0;
+            }
+            .crazy_img{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#blob_souhaits{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #candidat_content{
     height: 300px;
 }
@@ -1032,4 +1066,20 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.map_info{
+    >div{
+        margin-bottom: 20px;
+    }
+    img{
+        width: 25px;
+    }
+    p, a{
+        margin-bottom: 0;
+        color: white !important;
+        text-decoration: none;
+        opacity: 1;
+        margin-left: 15px;
+    }
 }

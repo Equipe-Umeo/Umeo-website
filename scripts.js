@@ -216,6 +216,13 @@ window.addEventListener('DOMContentLoaded', () => {
                 },
             }} ).mount();
         }   
+        if(document.getElementById("loc-carousel")){
+            new Splide( '#loc-carousel', {perPage: 1, perMove: 1,  breakpoints: {
+                800: {
+                    perPage: 1,
+                },
+            }} ).mount();
+        }   
     })
 
     //Animations home
