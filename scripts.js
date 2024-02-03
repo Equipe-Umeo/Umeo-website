@@ -136,7 +136,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     element.classList.add("active");
                 }
             })
-        } 
+        }
         if(currentUrl.indexOf("rejoindre") !== -1){
             menuItems.forEach((element, index) => {
                     element.classList.remove("active");
