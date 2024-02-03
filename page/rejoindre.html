@@ -65,7 +65,8 @@
 			<div
 				class="contained grey__bg semi__rounded p__x__40 pb__50 max__w__800px mb__50 mobile__full mobile__no__padding">
 				<h2 class="medium__title dark__green__text">Propose nous tes talents</h2>
-				<form class="p__20 flex flex__column items__center" name="rejoindre__form" id="rejoindre__form" netlify>
+				<form class="p__20 flex flex__column items__center" name="rejoindre__form" id="rejoindre__form" netlify
+					data-netlify-recaptcha="true">
 					<div class="flex items__center w__full mobile__col">
 						<label class="w__half mobile__w__full "><span> Nom </span><input type="text"
 								name="nom" /></label>
@@ -86,6 +87,7 @@
 						<label class="w__full flex flex__column mobile__w__full"><span> Votre message </span><textarea
 								name="msg"></textarea></label>
 					</div>
+					<div data-netlify-recaptcha="true"></div>
 					<button class="button dark__green__bg white__text mt__20" type="submit">Envoyer</button>
 				</form>
 			</div>
