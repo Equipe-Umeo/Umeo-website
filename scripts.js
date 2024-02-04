@@ -48,7 +48,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementsByTagName('header')[0];
     if(header){
         header.innerHTML = `
-        <form class="hidden" netlify data-netlify-recaptcha="true" data-netlify="true"></form>
         <img src="/img/logo.png" id="header_logo" alt="">
         <div id="mobile__menu__toggle">
 				<span></span>
@@ -67,6 +66,7 @@ window.addEventListener('DOMContentLoaded', () => {
         <li class="button yellow__bg white__text">
             <a id="rejoindre" class="menu__item" href="/page/rejoindre.html">Rejoins-nous</a>
         </li>
+       
     </ul>`
     }
 
