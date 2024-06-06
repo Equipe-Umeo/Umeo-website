@@ -727,6 +727,15 @@ body{
     background-color: $light-green;
 }
 
+#offers-carousel.splide, #loc-carousel.splide{
+        .splide__arrow{
+            background: $yellow;
+            svg{
+                fill: $dark-green
+            }
+        }
+}
+
 .splide {
     .splide__arrow{
         background: $dark-green;
@@ -737,6 +746,10 @@ body{
     .splide__pagination__page.is-active{
         background-color: #FFBB33;
     }
+}
+
+.small__yellow__dot + .white__text {
+    max-width: calc(100% - 35px);
 }
 
 // .sparkling__dot{
