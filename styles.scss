@@ -336,6 +336,10 @@ header{
     margin-left: auto;
 }
 
+.m__y__5 {
+    margin: 5px 0;
+}
+
 .m__10{
     margin: 10px;
 }
@@ -385,8 +389,20 @@ header{
     width: 50%;
 }
 
+.w__60{
+    width: 60%;
+}
+
+.w__40{
+    width: 40%;
+}
+
 .max__w__50{
     max-width: 50%;
+}
+
+.max__w__350px{
+    max-width: 350px;
 }
 
 .max__w__500px{
@@ -415,6 +431,14 @@ header{
 
 .w__120px{
     width: 120px;
+}
+
+.w__250px{
+    width: 250px;
+}
+
+.w__400px{
+    width: 400px;
 }
 
 .p__x__40 {
@@ -678,6 +702,13 @@ body{
 .yellow__dot{
     width: 20px;
     height: 20px;
+    border-radius: 100%;
+    background-color: $yellow;
+}
+
+.small__yellow__dot{
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
     background-color: $yellow;
 }
@@ -1119,6 +1150,12 @@ form{
     align-items: center;
 }
 
+.map{
+    iframe{
+        aspect-ratio: 1;
+    }
+}
+
 .map_info{
     >div{
         margin-bottom: 20px;
@@ -1156,4 +1193,80 @@ form{
     width: 100%;
     max-width: 100%;
     overflow: hidden;
+}
+
+#offers-carousel{
+    width: 100%;
+    ul li.splide__slide{
+        padding: 0 80px;
+        @media (max-width: 800px) {
+            padding: 0 40px;
+        }
+    }
+   
+}
+
+.yellow__progression__bar{
+    width: 100%;
+    height: 5px;
+    background-color: #FFBB33;
+    border-radius: 10px;
+    position: relative;
+    margin: 15px 0;
+}
+
+.progression__90{
+    &::after{
+        content: "";
+        position: absolute;
+        height: 15px;
+        width: 5px;
+        border-radius: 10px;
+        background: white;
+        left: 90%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.progression__80{
+    &::after{
+        content: "";
+        position: absolute;
+        height: 15px;
+        width: 5px;
+        border-radius: 10px;
+        background: white;
+        left: 80%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.progression__100{
+    &::after{
+        content: "";
+        position: absolute;
+        height: 15px;
+        width: 5px;
+        border-radius: 10px;
+        background: white;
+        left: 98%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.progression__60{
+    &::after{
+        content: "";
+        position: absolute;
+        height: 15px;
+        width: 5px;
+        border-radius: 10px;
+        background: white;
+        left: 60%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
