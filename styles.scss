@@ -1,6 +1,11 @@
 $yellow: #FFBB33;
 $light-green: #26AB80;
 $dark-green: #105B63;
+$blue:#6193C2;
+$pink: #FFB6B6;
+$apple-green: #CDFFB6;
+$salmon: #FFDDB6;
+
 @font-face {
     font-family: workbench-bold;
     src: url(./fonts/Workbench-Bold.otf);
@@ -264,6 +269,22 @@ header{
 
 .ligh__green__bg{
     background-color: $light-green;
+}
+
+.blue__bg{
+    background-color: $blue;
+}
+
+.pink__bg{
+    background-color: $pink;
+}
+
+.salmon__bg{
+    background-color: $salmon;
+}
+
+.apple__green__bg{
+    background-color: $apple-green;
 }
 
 .dark__green__bg{
@@ -713,6 +734,20 @@ body{
     background-color: $yellow;
 }
 
+.dark_green__dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: $dark-green;
+}
+
+.small__dark_green__dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: $dark-green;
+}
+
 .dark__green__dot{
     height: 20px;
     width: 20px;
@@ -749,6 +784,18 @@ body{
 }
 
 .small__yellow__dot + .white__text {
+    max-width: calc(100% - 35px);
+}
+
+.small__dark_green__dot + .white__text {
+    max-width: calc(100% - 35px);
+}
+
+.small__yellow__dot + .dark__green__text {
+    max-width: calc(100% - 35px);
+}
+
+.small__dark_green__dot + .dark__green__text {
     max-width: calc(100% - 35px);
 }
 
@@ -1082,6 +1129,13 @@ form{
             background: white;
             padding: 0 10px;
         }
+        select{
+            width: -webkit-fill-available;
+            border: none;
+            margin-left: 10px;
+            background: white;
+            padding: 0 10px;
+        }
         textarea{
             width: -webkit-fill-available;
             border: none;
@@ -1219,10 +1273,9 @@ form{
    
 }
 
-.yellow__progression__bar{
+.progression__bar{
     width: 100%;
     height: 5px;
-    background-color: #FFBB33;
     border-radius: 10px;
     position: relative;
     margin: 15px 0;

@@ -228,6 +228,17 @@ window.addEventListener('DOMContentLoaded', () => {
                 },
             }} ).mount();
         }   
+        
+        //BOUTONS POSTULER
+        const applyButtons = [...document.getElementsByClassName('apply__button')];
+        const offerField = document.getElementById('offer_field');
+        if(applyButtons && applyButtons.length>0 && offerField){
+            applyButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    offerField.value = button.id;
+                })
+            })
+        }
     })
 
     //Animations home
@@ -286,5 +297,16 @@ window.addEventListener('DOMContentLoaded', () => {
                 perPage: 1,
             },
         }} ).mount();
-    }   
+    } 
+    
+    //BOUTONS POSTULER
+    const applyButtons = [...document.getElementsByClassName('apply__button')];
+    const offerField = document.getElementById('offer_field');
+    if(applyButtons && applyButtons.length>0 && offerField){
+        applyButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                offerField.value = button.id;
+            })
+        })
+    }
 })
