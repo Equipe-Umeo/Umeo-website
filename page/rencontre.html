@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umeo</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/swup@4"></script>
+    <script defer src="https://unpkg.com/@swup/slide-theme@2"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script defer src="/scripts.js"></script>
+    <meta name="view-transition" content="same-origin" />
+</head>
+<div id="mouse"></div>
+
+<body>
+    <header></header>
+    <main class="transition-fade">
+        <section class="relative w__full">
+            <div class="contained mt__50 w__full flex justify__center">
+                <h1 class="w__full max__w__800px">Un projet à
+                    <span class="belissio text__center block">nous</span>
+                    <span class="ligh__green__text text__right block">confier</span>
+                </h1>
+            </div>
+        </section>
+        <section class="relative p__y__100 mb__-100 flex justify__center items__center mobile__full">
+            <div
+                class="contained grey__bg semi__rounded p__x__40 pb__50 max__w__800px mb__50 mobile__full mobile__no__padding">
+                <h2 class="medium__title dark__green__text">Nous serons heureux de vous rencontrer</h2>
+                <form class="p__20 flex flex__column items__center" name="rencontre__form" id="rencontre__form" netlify
+                    data-netlify-recaptcha="true" action="/page/success" data-netlify="true">
+                    <div class="flex items__center w__full mobile__col">
+                        <label class="w__half mobile__w__full "><span> Nom </span><input type="text"
+                                name="nom" /></label>
+                        <label class="w__half mobile__w__full"><span> Prénom </span><input type="text"
+                                name="prenom" /></label>
+                    </div>
+                    <div class="flex items__center w__full mobile__col">
+                        <label class="w__half mobile__w__full"><span> Société </span><input type="text"
+                                name="societe" /></label>
+                        <label class="w__half mobile__w__full"><span> Fonction </span><input type="text"
+                                name="fonction" /></label>
+                    </div>
+                    <div class="flex items__center w__full mobile__col">
+                        <label class="w__half mobile__w__full"><span> Email </span><input type="email"
+                                name="email" /></label>
+                        <label class="w__half mobile__w__full"><span> Téléphone </span><input type="text"
+                                name="tel" /></label>
+                    </div>
+                    <div class="flex items__center w__full mobile__col">
+                        <label class="w__full"><span> Joindre un document </span><input type="file" multiple
+                                class="inputfile" name="docs" /></label>
+                    </div>
+                    <div class="flex items__center w__full">
+                        <label class="w__full flex flex__column mobile__w__full"><span> Votre message </span><textarea
+                                name="msg"></textarea></label>
+                    </div>
+                    <div data-netlify-recaptcha="true"></div>
+                    <button class="button dark__green__bg white__text mt__20" type="submit">Envoyer</button>
+                </form>
+            </div>
+            <img id="contact__img__blob" class="w__400px disappear__mobile" src="/img/blob2.svg" alt="">
+            <img id="contact__img" class="disappear__mobile" src="/img/img_rencontre_form.png" alt="">
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

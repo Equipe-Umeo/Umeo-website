@@ -62,10 +62,15 @@ window.addEventListener('DOMContentLoaded', () => {
         <li>
             <a id="metier" class="menu__item" href="/page/metiers.html">Nos services</a>
         </li>
+
+         <li>
+            <a id="rencontre" class="menu__item" href="/page/rencontre.html">Rencontrons-nous</a>
+        </li>
         
         <li class="button yellow__bg white__text">
             <a id="rejoindre" class="menu__item" href="/page/rejoindre.html">Rejoins-nous</a>
         </li>
+        
        
     </ul>`
     }
@@ -130,7 +135,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const currentUrl = window.location.href;
         if(currentUrl.indexOf("metiers") !== -1){
             menuItems.forEach((element, index) => {
-                if(index !== 2){
+                if(index !== 1){
                     element.classList.remove("active");
                 } else {
                     element.classList.add("active");
@@ -139,9 +144,18 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         if(currentUrl.indexOf("rejoindre") !== -1){
             menuItems.forEach((element, index) => {
-                    element.classList.remove("active");
+                element.classList.remove("active");
             })
         } 
+        if(currentUrl.indexOf("rencontre") !== -1){
+            menuItems.forEach((element, index) => {
+                if(index !== 2){
+                    element.classList.remove("active");
+                } else {
+                    element.classList.add("active");
+                }
+            })
+        }
 
         menuItems.forEach(element => {
            element.addEventListener("click", function(){
@@ -163,46 +177,40 @@ window.addEventListener('DOMContentLoaded', () => {
     if(mobileMenuToggle && menu){
         mobileMenuToggle.addEventListener('click', function(){menu.classList.toggle("show"); mobileMenuToggle.classList.toggle("show")})
     }
-    
-    const swup = new Swup({
-        plugins: [new SwupSlideTheme()]
-      });
 
-
-    swup.hooks.on('page:view', () => {
-        // This runs after every page change by swup
+    const applyBaseFunctions = () => {
         //Animations home
         document.addEventListener("scroll", ()=>{
-                const homeScroll = document.documentElement.scrollTop;
-                const circle1 = document.getElementById("home1__circle");
-                const circle2 = document.getElementById("home1__circle2");
-                if(circle1){
-                    circle1.style.top = (10 + 0.05*homeScroll) +"px";
-                    circle1.style.right = (10 - 0.03*homeScroll) +"px";
-                }
-                if(circle2){
-                    circle2.style.top = (330 + 0*homeScroll) +"px";
-                    circle2.style.right = (50 + 0.03*homeScroll) +"px";
-                }
-                    const circle3 = document.getElementById("home2__circle");
-                    const circle4 = document.getElementById("home2__circle2");
-                if(circle3){
-                    circle3.style.top = (150 + 0.1*homeScroll) +"px";
-                    circle3.style.left = (140 - 0.03*homeScroll) +"px";
-                }
-                if(circle4){
-                    circle4.style.top = (750 + 0.05*homeScroll) +"px";
-                    circle4.style.left = (50 + 0.03*homeScroll) +"px";
-                }
-                const circle5 = document.getElementById("home3__circle");
-                const circle6 = document.getElementById("home3__circle2");
-                if(circle5){
-                    circle5.style.top = (100 - 0.1*(homeScroll/10)) +"px";
-                    circle5.style.left = (-100 + 0.1*(homeScroll/10)) +"px";
-                }
-                if(circle6){
-                    circle6.style.top = (0 + 0.1*(homeScroll/10)) +"px";
-                    circle6.style.left = (200 - 0.03*(homeScroll/10)) +"px";
+            const homeScroll = document.documentElement.scrollTop;
+            const circle1 = document.getElementById("home1__circle");
+            const circle2 = document.getElementById("home1__circle2");
+            if(circle1){
+                circle1.style.top = (10 + 0.05*homeScroll) +"px";
+                circle1.style.right = (10 - 0.03*homeScroll) +"px";
+            }
+            if(circle2){
+                circle2.style.top = (330 + 0*homeScroll) +"px";
+                circle2.style.right = (50 + 0.03*homeScroll) +"px";
+            }
+                const circle3 = document.getElementById("home2__circle");
+                const circle4 = document.getElementById("home2__circle2");
+            if(circle3){
+                circle3.style.top = (150 + 0.1*homeScroll) +"px";
+                circle3.style.left = (140 - 0.03*homeScroll) +"px";
+            }
+            if(circle4){
+                circle4.style.top = (750 + 0.05*homeScroll) +"px";
+                circle4.style.left = (50 + 0.03*homeScroll) +"px";
+            }
+            const circle5 = document.getElementById("home3__circle");
+            const circle6 = document.getElementById("home3__circle2");
+            if(circle5){
+                circle5.style.top = (100 - 0.1*(homeScroll/10)) +"px";
+                circle5.style.left = (-100 + 0.1*(homeScroll/10)) +"px";
+            }
+            if(circle6){
+                circle6.style.top = (0 + 0.1*(homeScroll/10)) +"px";
+                circle6.style.left = (200 - 0.03*(homeScroll/10)) +"px";
             }
         })
 
@@ -227,8 +235,8 @@ window.addEventListener('DOMContentLoaded', () => {
                     perPage: 1,
                 },
             }} ).mount();
-        }   
-        
+        } 
+
         //BOUTONS POSTULER
         const applyButtons = [...document.getElementsByClassName('apply__button')];
         const offerField = document.getElementById('offer_field');
@@ -239,74 +247,19 @@ window.addEventListener('DOMContentLoaded', () => {
                 })
             })
         }
-    })
-
-    //Animations home
-    document.addEventListener("scroll", ()=>{
-        const homeScroll = document.documentElement.scrollTop;
-        const circle1 = document.getElementById("home1__circle");
-        const circle2 = document.getElementById("home1__circle2");
-        if(circle1){
-            circle1.style.top = (10 + 0.05*homeScroll) +"px";
-            circle1.style.right = (10 - 0.03*homeScroll) +"px";
-        }
-        if(circle2){
-            circle2.style.top = (330 + 0*homeScroll) +"px";
-            circle2.style.right = (50 + 0.03*homeScroll) +"px";
-        }
-            const circle3 = document.getElementById("home2__circle");
-            const circle4 = document.getElementById("home2__circle2");
-        if(circle3){
-            circle3.style.top = (150 + 0.1*homeScroll) +"px";
-            circle3.style.left = (140 - 0.03*homeScroll) +"px";
-        }
-        if(circle4){
-            circle4.style.top = (750 + 0.05*homeScroll) +"px";
-            circle4.style.left = (50 + 0.03*homeScroll) +"px";
-        }
-        const circle5 = document.getElementById("home3__circle");
-        const circle6 = document.getElementById("home3__circle2");
-        if(circle5){
-            circle5.style.top = (100 - 0.1*(homeScroll/10)) +"px";
-            circle5.style.left = (-100 + 0.1*(homeScroll/10)) +"px";
-        }
-        if(circle6){
-            circle6.style.top = (0 + 0.1*(homeScroll/10)) +"px";
-            circle6.style.left = (200 - 0.03*(homeScroll/10)) +"px";
-        }
-    })
-
-    //Sliders
-    if(document.getElementById("image-carousel")){
-        new Splide( '#image-carousel', {perPage: 2, perMove: 1,  breakpoints: {
-            800: {
-                perPage: 1,
-            },
-        }} ).mount();
-    }   
-    if(document.getElementById("loc-carousel")){
-        new Splide( '#loc-carousel', {perPage: 1, perMove: 1,  breakpoints: {
-            800: {
-                perPage: 1,
-            },
-        }} ).mount();
-    }   
-    if(document.getElementById("offers-carousel")){
-        new Splide( '#offers-carousel', {perPage: 1, perMove: 1,  breakpoints: {
-            800: {
-                perPage: 1,
-            },
-        }} ).mount();
-    } 
-    
-    //BOUTONS POSTULER
-    const applyButtons = [...document.getElementsByClassName('apply__button')];
-    const offerField = document.getElementById('offer_field');
-    if(applyButtons && applyButtons.length>0 && offerField){
-        applyButtons.forEach(button => {
-            button.addEventListener("click", () => {
-                offerField.value = button.id;
-            })
-        })
     }
+
+    //On lance les fonctions la première fois
+    applyBaseFunctions();
+
+    const swup = new Swup({
+        plugins: [new SwupSlideTheme()]
+      });
+
+
+    swup.hooks.on('page:view', () => {
+        // This runs after every page change by swup
+        applyBaseFunctions();
+    })
+    
 })
