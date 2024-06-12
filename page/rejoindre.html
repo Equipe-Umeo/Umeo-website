@@ -842,44 +842,79 @@
 				<h2 class="medium__title dark__green__text">Propose nous tes talents</h2>
 				<form class="p__20 flex flex__column items__center" name="rejoindre__form" id="rejoindre__form" netlify
 					data-netlify-recaptcha="true" action="/page/success" data-netlify="true">
-					<div class="flex items__center w__full mobile__col">
-						<label class="w__half mobile__w__full "><span> Nom </span><input type="text"
-								name="nom" /></label>
-						<label class="w__half mobile__w__full"><span> Prénom </span><input type="text"
-								name="prenom" /></label>
+					<div class="flex items__center w__full mobile__col justify__between">
+						<div class="w__half mobile__w__full">
+							<label>
+								<div class="flex">
+									<span> Nom </span><input required type="text" name="nom" />
+								</div>
+							</label>
+						</div>
+						<div class="w__half mobile__w__full">
+							<label>
+								<div class="flex">
+									<span> Prénom </span>
+									<input required type="text" name="prenom" />
+								</div>
+							</label>
+						</div>
 					</div>
-					<div class="flex items__center w__full mobile__col">
-						<label class="w__half mobile__w__full"><span> Email </span><input type="email"
-								name="email" /></label>
-						<label class="w__half mobile__w__full"><span> Téléphone </span><input type="text"
-								name="tel" /></label>
+					<div class="flex items__center w__full mobile__col justify__between">
+						<div class="w__half mobile__w__full">
+							<label>
+								<div class="flex">
+									<span> Email </span><input required type="email" name="email" />
+								</div>
+							</label>
+						</div>
+						<div class="w__half mobile__w__full">
+							<label>
+								<div class="flex">
+									<span> Téléphone </span><input type="text" name="tel" />
+								</div>
+							</label>
+						</div>
 					</div>
-					<div class="flex items__center w__full mobile__col">
-						<label class="w__full"><span> Joindre un document </span><input type="file" multiple
-								class="inputfile" name="docs" /></label>
+					<div class="flex items__center w__full mobile__col justify__between">
+						<div class="w__full">
+							<label>
+								<div class="flex"><span> Joindre un document </span><input type="file" multiple
+										class="inputfile" name="docs" />
+							</label>
+						</div>
 					</div>
-					<div class="flex items__center w__full mobile__col">
-						<label class="w__full "><span> Candidature concernant </span>
-							<select name="offer" id="offer_field">
-								<option value="spontaneous">Candidature spontanée</option>
-								<option value="assurance_qual">Pharmacien Assurance Qualité (H/F)</option>
-								<option value="qual_regle">Chargé Qualité Réglementaire DM (H/F)</option>
-								<option value="vsi">Chargé Validation des Systèmes informatisés (H/F)</option>
-								<option value="charge_qualif">Chargé Qualification - Validation (H/F)</option>
-								<option value="charg_rec">Chargé de Recrutement (H/F)</option>
-								<option value="buis_man">Business Manager (H/F)</option>
-								<option value="charg__assurance_qual">Chargé Assurance Qualité (H/F)</option>
-								<option value="rec_alternance">Chargé(e) de recrutement en alternance (H/F)</option>
-							</select>
-						</label>
+			</div>
+			<div class="flex items__center w__full mobile__col">
+				<label class="w__full ">
+					<div class="flex">
+						<span> Candidature concernant </span>
+						<select name="offer" id="offer_field">
+							<option value="spontaneous">Candidature spontanée</option>
+							<option value="assurance_qual">Pharmacien Assurance Qualité (H/F)</option>
+							<option value="qual_regle">Chargé Qualité Réglementaire DM (H/F)</option>
+							<option value="vsi">Chargé Validation des Systèmes informatisés (H/F)</option>
+							<option value="charge_qualif">Chargé Qualification - Validation (H/F)</option>
+							<option value="charg_rec">Chargé de Recrutement (H/F)</option>
+							<option value="buis_man">Business Manager (H/F)</option>
+							<option value="charg__assurance_qual">Chargé Assurance Qualité (H/F)</option>
+							<option value="rec_alternance">Chargé(e) de recrutement en alternance (H/F)</option>
+						</select>
 					</div>
-					<div class="flex items__center w__full">
-						<label class="w__full flex flex__column mobile__w__full"><span> Votre message </span><textarea
-								name="msg"></textarea></label>
-					</div>
-					<div data-netlify-recaptcha="true"></div>
-					<button class="button dark__green__bg white__text mt__20" type="submit">Envoyer</button>
-				</form>
+				</label>
+			</div>
+			<div class="flex items__center w__full">
+				<div class="w__full">
+					<label>
+						<div class="flex flex__column">
+							<span> Votre message </span>
+							<textarea required name="msg"></textarea>
+						</div>
+					</label>
+				</div>
+			</div>
+			<div data-netlify-recaptcha="true"></div>
+			<button class="button dark__green__bg white__text mt__20" type="submit">Envoyer</button>
+			</form>
 			</div>
 			<img id="contact__img" class="disappear__mobile" src="/img/form_img.png" alt="">
 		</section>

@@ -434,6 +434,10 @@ header{
     max-width: 500px;
 }
 
+.max__w__600px{
+    max-width: 600px;
+}
+
 .max__w__800px{
     max-width: 800px;
 }
@@ -1115,8 +1119,8 @@ footer{
 
 form{
     label{
-        display: flex;
-        margin: 20px;
+        display: block;
+        margin: 15px;
         span{
             background-color: $yellow;
             padding: 10px;
@@ -1127,26 +1131,27 @@ form{
             font-family: belissio
         }
         input{
-            width: -webkit-fill-available;
+            width: 100%;
             border: none;
             margin-left: 10px;
             background: white;
             padding: 0 10px;
         }
         select{
-            width: -webkit-fill-available;
+            width: 100%;
             border: none;
             margin-left: 10px;
             background: white;
             padding: 0 10px;
         }
         textarea{
-            width: -webkit-fill-available;
+            width: 100%;
             border: none;
             background: white;
             min-height: 200px;
             margin-top: 10px;
             padding: 10px;
+            width: calc(100% - 20px);
         }
         .inputfile{
             cursor: pointer;
@@ -1173,7 +1178,7 @@ form{
     position: absolute;
     left: 0;
     top: 0px;
-    transform: translateY(-40%);
+    transform: translateY(-30%);
     z-index: -1;
 }
 

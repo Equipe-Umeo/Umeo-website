@@ -22,8 +22,8 @@
     <main class="transition-fade">
         <section class="relative w__full">
             <div class="contained mt__50 w__full flex justify__center">
-                <h1 class="w__full max__w__800px">Un projet à
-                    <span class="belissio text__center block">nous</span>
+                <h1 class="w__full max__w__600px">Un projet à
+                    <span class="belissio text__center block" style="transform: translateX(10%);">nous</span>
                     <span class="ligh__green__text text__right block">confier</span>
                 </h1>
             </div>
@@ -34,39 +34,87 @@
                 <h2 class="medium__title dark__green__text">Nous serons heureux de vous rencontrer</h2>
                 <form class="p__20 flex flex__column items__center" name="rencontre__form" id="rencontre__form" netlify
                     data-netlify-recaptcha="true" action="/page/success" data-netlify="true">
-                    <div class="flex items__center w__full mobile__col">
-                        <label class="w__half mobile__w__full "><span> Nom </span><input type="text"
-                                name="nom" /></label>
-                        <label class="w__half mobile__w__full"><span> Prénom </span><input type="text"
-                                name="prenom" /></label>
+                    <div class="flex items__center w__full mobile__col justify__between">
+                        <div class="w__half mobile__w__full">
+                            <label>
+                                <div class="flex">
+                                    <span> Nom </span><input required type="text" name="nom" />
+                                </div>
+                            </label>
+                        </div>
+                        <div class="w__half mobile__w__full">
+                            <label>
+                                <div class="flex">
+                                    <span> Prénom </span>
+                                    <input required type="text" name="prenom" />
+                                </div>
+                            </label>
+                        </div>
                     </div>
-                    <div class="flex items__center w__full mobile__col">
-                        <label class="w__half mobile__w__full"><span> Société </span><input type="text"
-                                name="societe" /></label>
-                        <label class="w__half mobile__w__full"><span> Fonction </span><input type="text"
-                                name="fonction" /></label>
+                    <div class="flex items__center w__full mobile__col justify__between">
+                        <div class="w__half mobile__w__full">
+                            <label>
+                                <div class="flex">
+                                    <span> Société </span><input type="text" name="societe" />
+                                </div>
+                            </label>
+                        </div>
+                        <div class="w__half mobile__w__full">
+                            <label>
+                                <div class="flex">
+                                    <span> Fonction </span><input type="text" name="fonction" />
+                            </label>
+                        </div>
+
                     </div>
-                    <div class="flex items__center w__full mobile__col">
-                        <label class="w__half mobile__w__full"><span> Email </span><input type="email"
-                                name="email" /></label>
-                        <label class="w__half mobile__w__full"><span> Téléphone </span><input type="text"
-                                name="tel" /></label>
-                    </div>
-                    <div class="flex items__center w__full mobile__col">
-                        <label class="w__full"><span> Joindre un document </span><input type="file" multiple
-                                class="inputfile" name="docs" /></label>
-                    </div>
-                    <div class="flex items__center w__full">
-                        <label class="w__full flex flex__column mobile__w__full"><span> Votre message </span><textarea
-                                name="msg"></textarea></label>
-                    </div>
-                    <div data-netlify-recaptcha="true"></div>
-                    <button class="button dark__green__bg white__text mt__20" type="submit">Envoyer</button>
-                </form>
+            </div>
+            <div class="flex items__center w__full mobile__col justify__between">
+                <div class="w__half mobile__w__full">
+                    <label>
+                        <div class="flex">
+                            <span> Email </span><input required type="email" name="email" />
+                        </div>
+                    </label>
+                </div>
+                <div class="w__half mobile__w__full">
+                    <label>
+                        <div class="flex">
+                            <span> Téléphone </span><input type="text" name="tel" />
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="flex items__center w__full mobile__col justify__between">
+                <div class="w__full">
+                    <label>
+                        <div class="flex"><span> Joindre un document </span><input type="file" multiple
+                                class="inputfile" name="docs" />
+                    </label>
+                </div>
+            </div>
+            </div>
+            <div class="flex items__center w__full">
+                <div class="w__full">
+                    <label>
+                        <div class="flex flex__column">
+                            <span> Votre message </span>
+                            <textarea required name="msg"></textarea>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div data-netlify-recaptcha="true"></div>
+            <button class="button dark__green__bg white__text mt__20" type="submit">Envoyer</button>
+            </form>
             </div>
             <img id="contact__img__blob" class="w__400px disappear__mobile" src="/img/blob2.svg" alt="">
             <img id="contact__img" class="disappear__mobile" src="/img/img_rencontre_form.png" alt="">
         </section>
+        <!-- Début de widget en ligne Calendly -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/clementherpe?primary_color=ffbb33"
+            style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Fin de widget en ligne Calendly -->
     </main>
     <footer></footer>
 </body>
