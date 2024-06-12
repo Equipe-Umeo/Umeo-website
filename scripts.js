@@ -94,6 +94,9 @@ window.addEventListener('DOMContentLoaded', () => {
 						<li>
 							<a href="/page/metiers.html">Nos services</a>
 						</li>
+                        <li>
+							<a href="/page/rencontre.html">Rencontrons-nous</a>
+						</li>
 						<li>
 							<a href="/">
 								Qui sommes-nous ?</a>
