@@ -366,6 +366,10 @@ header{
     margin: 5px 0;
 }
 
+.m__none{
+    margin: 0;
+}
+
 .m__10{
     margin: 10px;
 }
@@ -1440,4 +1444,12 @@ p{
         width: 20px;
         margin-left: 10px;
     }
+}
+
+.action__status{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
 }
