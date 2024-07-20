@@ -22,7 +22,7 @@
 
 <body>
     <header></header>
-    <main class="transition-fade">
+    <main id="swup" class="transition-fade">
         <section class="relative w__full">
             <div class="contained mt__50 w__full flex justify__center">
                 <h1 class="w__full max__w__600px">Un projet à
@@ -66,49 +66,48 @@
                             <label>
                                 <div class="flex">
                                     <span> Fonction </span><input type="text" name="fonction" />
+                                </div>
                             </label>
                         </div>
-
                     </div>
-            </div>
-            <div class="flex items__center w__full mobile__col justify__between">
-                <div class="w__half mobile__w__full">
-                    <label>
-                        <div class="flex">
-                            <span> Email </span><input required type="email" name="email" />
+                    <div class="flex items__center w__full mobile__col justify__between">
+                        <div class="w__half mobile__w__full">
+                            <label>
+                                <div class="flex">
+                                    <span> Email </span><input required type="email" name="email" />
+                                </div>
+                            </label>
                         </div>
-                    </label>
-                </div>
-                <div class="w__half mobile__w__full">
-                    <label>
-                        <div class="flex">
-                            <span> Téléphone </span><input type="text" name="tel" />
+                        <div class="w__half mobile__w__full">
+                            <label>
+                                <div class="flex">
+                                    <span> Téléphone </span><input type="text" name="tel" />
+                                </div>
+                            </label>
                         </div>
-                    </label>
-                </div>
-            </div>
-            <div class="flex items__center w__full mobile__col justify__between">
-                <div class="w__full">
-                    <label>
-                        <div class="flex"><span> Joindre un document </span><input type="file" multiple
-                                class="inputfile" name="docs" />
-                    </label>
-                </div>
-            </div>
-            </div>
-            <div class="flex items__center w__full">
-                <div class="w__full">
-                    <label>
-                        <div class="flex flex__column">
-                            <span> Votre message </span>
-                            <textarea required name="msg"></textarea>
+                    </div>
+                    <div class="flex items__center w__full mobile__col justify__between">
+                        <div class="w__full">
+                            <label>
+                                <div class="flex"><span> Joindre un document </span><input type="file" multiple
+                                        class="inputfile" name="docs" />
+                                </div>
+                            </label>
                         </div>
-                    </label>
-                </div>
-            </div>
-            <div data-netlify-recaptcha="true"></div>
-            <button class="button dark__green__bg white__text mt__20" type="submit">Envoyer</button>
-            </form>
+                    </div>
+                    <div class="flex items__center w__full">
+                        <div class="w__full">
+                            <label>
+                                <div class="flex flex__column">
+                                    <span> Votre message </span>
+                                    <textarea required name="msg"></textarea>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div data-netlify-recaptcha="true"></div>
+                    <button class="button dark__green__bg white__text mt__20" type="submit">Envoyer</button>
+                </form>
             </div>
             <img id="contact__img__blob" class="w__400px disappear__mobile" src="/img/blob2.svg" alt="">
             <img id="contact__img" class="disappear__mobile" src="/img/img_rencontre_form.png" alt="">

@@ -70,9 +70,13 @@ window.addEventListener('DOMContentLoaded', () => {
             <li class="button yellow__bg white__text">
                 <a id="rejoindre" class="menu__item" href="/page/rejoindre.html">Rejoins-nous</a>
             </li>
+
+            <li class="button white__bg black__border black__text workbench-bold">
+                <a id="fondation" class="menu__item" href="/page/fondation.html">La fondation</a>
+            </li>
         </ul>
         <div id="cookie-banner">
-            <p class="white__text mt__20">En sélectionnant « Accepter », vous autorisez Umeo à utiliser des cookies et à partager vos données. Nous utilisons des cookies et des outils similaires pour mesurer l'audience de notre site (nombre de visites, navigateur utilisé, ect...)</p>
+            <p class="white__text mt__20">En sélectionnant « Accepter », vous autorisez Umeo à utiliser des cookies et à partager vos données. Nous utilisons des cookies et des outils similaires pour mesurer l'audience de notre site (nombre de visites, navigateur utilisé, etc...)</p>
             <div class="flex w__full justify__center">
                 <button class="button yellow__bg white__text mr__20" id="accept-cookies">Accepter</button>
                 <button class="button white__bg black__border black__text workbench-bold" id="decline-cookies">Refuser</button>
@@ -195,6 +199,11 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
             })
         }
+        if(currentUrl.indexOf("fondation") !== -1){
+            menuItems.forEach((element, index) => {
+                element.classList.remove("active");
+            })
+        } 
 
         menuItems.forEach(element => {
            element.addEventListener("click", function(){
@@ -251,11 +260,23 @@ window.addEventListener('DOMContentLoaded', () => {
                 circle6.style.top = (0 + 0.1*(homeScroll/10)) +"px";
                 circle6.style.left = (200 - 0.03*(homeScroll/10)) +"px";
             }
+            const circle1fondation = document.getElementById("fondation1__circle");
+            if(circle1fondation){
+                circle1fondation.style.top = (-50 + 0.05*homeScroll) +"px";
+                circle1fondation.style.right = (120 - 0.02*homeScroll) +"px";
+            }
         })
 
         //Sliders
         if(document.getElementById("image-carousel")){
             new Splide( '#image-carousel', {perPage: 2, perMove: 1,  breakpoints: {
+                800: {
+                    perPage: 1,
+                },
+            }} ).mount();
+        }
+        if(document.getElementById("fondation-carousel")){
+            new Splide( '#fondation-carousel', {perPage: 2, perMove: 1,  breakpoints: {
                 800: {
                     perPage: 1,
                 },

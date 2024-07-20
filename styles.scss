@@ -447,6 +447,10 @@ header{
     height: fit-content;
 }
 
+.h__screen{
+    height: 100vh;
+}
+
 .w__full{
     width: 100%;
 }
@@ -634,11 +638,30 @@ body{
     }
 }
 
+#illustration_fondation_1{
+    position: absolute;
+    top: -50px;
+    right: -30px;
+    height: 600px;
+}
+
 #home1__img{
     position: absolute;
     top: -40px;
     right: -30px;
     height: 600px;
+}
+
+#fondation1__circle{
+    transition: all 0.2s linear;
+    position: absolute;
+    top: -50px;
+    right: 120px;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    border-radius: 100%;
+    background-color: $light-green;
 }
 
 #home1__circle{
@@ -700,7 +723,7 @@ body{
     left: -50px;
 }
 
-.umeo__team{
+.umeo__team, .umeo__fondation{
     width: calc(100% - 200px);
     @media (max-width: 800px) {
         width: calc(100% - 20px);
@@ -719,6 +742,17 @@ body{
         }
         .position__centered{
             width: 170px;
+        }
+    }
+}
+
+.umeo__fondation{
+    li{
+        img{
+            width: 400px;
+        }
+        .position__centered{
+            width: 250px;
         }
     }
 }
@@ -1379,4 +1413,17 @@ p{
 #cookie-banner button {
     margin: 5px;
     padding: 5px 10px;
+}
+
+#fondation_banner{
+    height: calc(100vh - 100px);
+    img{
+        object-fit: cover;
+        max-height: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        margin: 0;
+    }
 }
