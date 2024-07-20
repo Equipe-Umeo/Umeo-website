@@ -66,6 +66,10 @@ window.addEventListener('DOMContentLoaded', () => {
             <li>
                 <a id="rencontre" class="menu__item" href="/page/rencontre.html">Rencontrons-nous</a>
             </li>
+
+            <li>
+                <a id="rencontre" class="menu__item" href="/page/blog.html">Blog</a>
+            </li>
             
             <li class="button yellow__bg white__text">
                 <a id="rejoindre" class="menu__item" href="/page/rejoindre.html">Rejoins-nous</a>
@@ -295,6 +299,15 @@ window.addEventListener('DOMContentLoaded', () => {
                     element.classList.remove("active");
                 })
             } 
+            if(currentUrl.indexOf("blog") !== -1){
+                menuItems.forEach((element, index) => {
+                    if(index !== 3){
+                        element.classList.remove("active");
+                    } else {
+                        element.classList.add("active");
+                    }
+                })
+            }
 
             menuItems.forEach(element => {
                 element.addEventListener("click", function(){
