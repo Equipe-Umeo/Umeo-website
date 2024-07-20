@@ -1283,11 +1283,11 @@ form{
     width: 100%;
     ul li.splide__slide{
         padding: 0 80px;
+        align-items: center;
         @media (max-width: 800px) {
             padding: 0 40px;
         }
     }
-   
 }
 
 .progression__bar{
