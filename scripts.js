@@ -55,24 +55,30 @@ window.addEventListener('DOMContentLoaded', () => {
 				<span></span>
 			</div>
         <ul class="contained">
-        <li>
-            <a id="home" class="menu__item active" href="/">Accueil</a>
-        </li>
-        
-        <li>
-            <a id="metier" class="menu__item" href="/page/metiers.html">Nos services</a>
-        </li>
+            <li>
+                <a id="home" class="menu__item active" href="/">Accueil</a>
+            </li>
+            
+            <li>
+                <a id="metier" class="menu__item" href="/page/metiers.html">Nos services</a>
+            </li>
 
-         <li>
-            <a id="rencontre" class="menu__item" href="/page/rencontre.html">Rencontrons-nous</a>
-        </li>
-        
-        <li class="button yellow__bg white__text">
-            <a id="rejoindre" class="menu__item" href="/page/rejoindre.html">Rejoins-nous</a>
-        </li>
-        
-       
-    </ul>`
+            <li>
+                <a id="rencontre" class="menu__item" href="/page/rencontre.html">Rencontrons-nous</a>
+            </li>
+            
+            <li class="button yellow__bg white__text">
+                <a id="rejoindre" class="menu__item" href="/page/rejoindre.html">Rejoins-nous</a>
+            </li>
+        </ul>
+        <div id="cookie-banner">
+            <p class="white__text mt__20">En sélectionnant « Accepter », vous autorisez Umeo à utiliser des cookies et à partager vos données. Nous utilisons des cookies et des outils similaires pour mesurer l'audience de notre site (nombre de visites, navigateur utilisé, ect...)</p>
+            <div class="flex w__full justify__center">
+                <button class="button yellow__bg white__text mr__20" id="accept-cookies">Accepter</button>
+                <button class="button white__bg black__border black__text workbench-bold" id="decline-cookies">Refuser</button>
+            </div>
+        </div>
+        `
     }
 
     const footer = document.getElementsByTagName("footer")[0];
@@ -129,6 +135,36 @@ window.addEventListener('DOMContentLoaded', () => {
 				</div>
 			</div>
         `
+
+         //Gestion des cookies
+        var cookieBanner = document.getElementById('cookie-banner');
+        var acceptButton = document.getElementById('accept-cookies');
+        var declineButton = document.getElementById('decline-cookies');
+
+        // Vérifier si l'utilisateur a déjà donné son consentement
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
+            loadGoogleTagManager();
+            cookieBanner.style.display = 'none';
+        }
+
+        acceptButton.addEventListener('click', function () {
+            localStorage.setItem('cookiesAccepted', 'true');
+            loadGoogleTagManager();
+            cookieBanner.style.display = 'none';
+        });
+
+        declineButton.addEventListener('click', function () {
+            localStorage.setItem('cookiesAccepted', 'false');
+            cookieBanner.style.display = 'none';
+        });
+
+        function loadGoogleTagManager() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-T9M4MC65');
+        }
     }
 
     //Style ACTIF MENU

@@ -198,6 +198,7 @@ header{
     border-radius: 5px;
     width: fit-content;
     font-family: belissio;
+    cursor: pointer;
     a{
         font-family: belissio;
         padding: 13px 25px;
@@ -1352,4 +1353,30 @@ form{
         top: 50%;
         transform: translateY(-50%);
     }
+}
+
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $dark-green;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+p{
+    font-size: 13px;
+    line-height: 15px;
+    max-width: 80%;
+}
+}
+#cookie-banner button {
+    margin: 5px;
+    padding: 5px 10px;
 }
