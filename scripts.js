@@ -71,8 +71,8 @@ window.addEventListener('DOMContentLoaded', () => {
                 <a id="rejoindre" class="menu__item" href="/page/rejoindre.html">Rejoins-nous</a>
             </li>
 
-            <li class="button white__bg black__border black__text workbench-bold">
-                <a id="fondation" class="menu__item" href="/page/fondation.html">La fondation</a>
+            <li class="button white__bg black__text workbench-bold">
+                <a id="fondation" class="menu__item" href="/page/fondation.html"> La fondation  <img src="/img/earth_icon_svg.svg" alt="icon planete terre"></a>
             </li>
         </ul>
         <div id="cookie-banner">
@@ -171,53 +171,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    //Style ACTIF MENU
-    const menuItems = [...document.getElementsByClassName('menu__item')];
-
-    if(menuItems){
-        const currentUrl = window.location.href;
-        if(currentUrl.indexOf("metiers") !== -1){
-            menuItems.forEach((element, index) => {
-                if(index !== 1){
-                    element.classList.remove("active");
-                } else {
-                    element.classList.add("active");
-                }
-            })
-        }
-        if(currentUrl.indexOf("rejoindre") !== -1){
-            menuItems.forEach((element, index) => {
-                element.classList.remove("active");
-            })
-        } 
-        if(currentUrl.indexOf("rencontre") !== -1){
-            menuItems.forEach((element, index) => {
-                if(index !== 2){
-                    element.classList.remove("active");
-                } else {
-                    element.classList.add("active");
-                }
-            })
-        }
-        if(currentUrl.indexOf("fondation") !== -1){
-            menuItems.forEach((element, index) => {
-                element.classList.remove("active");
-            })
-        } 
-
-        menuItems.forEach(element => {
-           element.addEventListener("click", function(){
-                menuItems.map(element => element.classList.remove("active")); 
-                element.classList.add("active")
-                const mobileMenuToggle = document.getElementById("mobile__menu__toggle");
-                const menu = document.getElementsByTagName("header")[0];
-                if(mobileMenuToggle && menu){
-                    menu.classList.remove("show"); 
-                    mobileMenuToggle.classList.remove("show")
-                }
-           })
-        })
-    }
+    
 
     //Menu click
     const mobileMenuToggle = document.getElementById("mobile__menu__toggle");
@@ -304,6 +258,54 @@ window.addEventListener('DOMContentLoaded', () => {
             applyButtons.forEach(button => {
                 button.addEventListener("click", () => {
                     offerField.value = button.id;
+                })
+            })
+        }
+
+        //Style ACTIF MENU
+        const menuItems = [...document.getElementsByClassName('menu__item')];
+
+        if(menuItems){
+            const currentUrl = window.location.href;
+            if(currentUrl.indexOf("metiers") !== -1){
+                menuItems.forEach((element, index) => {
+                    if(index !== 1){
+                        element.classList.remove("active");
+                    } else {
+                        element.classList.add("active");
+                    }
+                })
+            }
+            if(currentUrl.indexOf("rejoindre") !== -1){
+                menuItems.forEach((element, index) => {
+                    element.classList.remove("active");
+                })
+            } 
+            if(currentUrl.indexOf("rencontre") !== -1){
+                menuItems.forEach((element, index) => {
+                    if(index !== 2){
+                        element.classList.remove("active");
+                    } else {
+                        element.classList.add("active");
+                    }
+                })
+            }
+            if(currentUrl.indexOf("fondation") !== -1){
+                menuItems.forEach((element, index) => {
+                    element.classList.remove("active");
+                })
+            } 
+
+            menuItems.forEach(element => {
+                element.addEventListener("click", function(){
+                        menuItems.map(element => element.classList.remove("active")); 
+                        element.classList.add("active")
+                        const mobileMenuToggle = document.getElementById("mobile__menu__toggle");
+                        const menu = document.getElementsByTagName("header")[0];
+                        if(mobileMenuToggle && menu){
+                            menu.classList.remove("show"); 
+                            mobileMenuToggle.classList.remove("show")
+                        }
                 })
             })
         }

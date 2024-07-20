@@ -1427,3 +1427,13 @@ p{
         margin: 0;
     }
 }
+
+.menu__item{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 20px;
+        margin-left: 10px;
+    }
+}
