@@ -1333,10 +1333,32 @@ form{
     position: fixed;
     top: 25px;
     right: 25px;
-    height: 50px;
+    height: 25px;
     @media (max-width: 800px) {
         top: 10px;
         height: 30px;
+    }
+}
+
+#french_flag{
+    position: fixed;
+    top: 25px;
+    right: 50px;
+    height: 25px;
+    cursor: pointer;
+    @media (max-width: 800px) {
+        
+    }
+}
+
+#gb_flag{
+    position: fixed;
+    top: 25px;
+    right: 80px;
+    cursor: pointer;
+    height: 25px;
+    @media (max-width: 800px) {
+       
     }
 }
 

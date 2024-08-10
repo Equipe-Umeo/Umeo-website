@@ -45,10 +45,18 @@ window.addEventListener('DOMContentLoaded', () => {
     },false);
 
     //Menu dynamique
+    let lang = 'fr';
+    const currentUrl = window.location.href;
+    if(currentUrl.indexOf("/en") !== -1){
+        lang = 'en'
+    }
+
     const header = document.getElementsByTagName('header')[0];
     if(header){
-        header.innerHTML = `
+        lang == 'fr' ? header.innerHTML = `
         <img src="/img/logo.png" id="header_logo" alt="">
+        <img src="/img/frenchflag.svg" id="french_flag" alt="drapeau français">
+        <img src="/img/gbflag.svg" id="gb_flag" alt="drapeau anglais">
         <div id="mobile__menu__toggle">
 				<span></span>
 				<span></span>
@@ -86,15 +94,56 @@ window.addEventListener('DOMContentLoaded', () => {
                 <button class="button white__bg black__border black__text workbench-bold" id="decline-cookies">Refuser</button>
             </div>
         </div>
+        ` : header.innerHTML = `
+        <img src="/img/logo.png" id="header_logo" alt="">
+        <img src="/img/frenchflag.svg" id="french_flag" alt="drapeau français">
+        <img src="/img/gbflag.svg" id="gb_flag" alt="drapeau anglais">
+        <div id="mobile__menu__toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+        <ul class="contained">
+            <li>
+                <a id="home" class="menu__item active" href="/en">Home</a>
+            </li>
+            
+            <li>
+                <a id="metier" class="menu__item" href="/en/page/metiers.html">Services</a>
+            </li>
+
+            <li>
+                <a id="rencontre" class="menu__item" href="/en/page/rencontre.html">Let's meet</a>
+            </li>
+
+            <li>
+                <a id="rencontre" class="menu__item" href="/en/page/blog.html">Blog</a>
+            </li>
+            
+            <li class="button yellow__bg white__text">
+                <a id="rejoindre" class="menu__item" href="/en/page/rejoindre.html">Join us</a>
+            </li>
+
+            <li class="button white__bg black__text workbench-bold">
+                <a id="fondation" class="menu__item" href="/en/page/fondation.html"> The fundation <img src="/img/earth_icon_svg.svg" alt="icon planete terre"></a>
+            </li>
+        </ul>
+        <div id="cookie-banner">
+            <p class="white__text mt__20">En sélectionnant « Accepter », vous autorisez Umeo à utiliser des cookies et à partager vos données. Nous utilisons des cookies et des outils similaires pour mesurer l'audience de notre site (nombre de visites, navigateur utilisé, etc...)</p>
+            <div class="flex w__full justify__center">
+                <button class="button yellow__bg white__text mr__20" id="accept-cookies">Accepter</button>
+                <button class="button white__bg black__border black__text workbench-bold" id="decline-cookies">Refuser</button>
+            </div>
+        </div>
         `
-    }
+    } ;
 
     const footer = document.getElementsByTagName("footer")[0];
     if(footer){
         footer.classList.add("p__40")
         footer.classList.add("w__full")
         footer.classList.add("dark__green__bg")
-        footer.innerHTML = `
+        lang == 'fr' ? footer.innerHTML = `
         <div class="contained flex items__center justify__between mobile__col">
 				<div class="w__third mobile__full">
 					<img id="footer__logo" src="/img/logo.png" alt="">
@@ -114,6 +163,54 @@ window.addEventListener('DOMContentLoaded', () => {
 						<li>
 							<a href="/">
 								Qui sommes-nous ?</a>
+						</li>
+					</ul>
+				</div>
+				<div class="w__third mobile__full">
+					<ul id="footer__infos">
+						<li class="flex items__center">
+							<img src="/img/localisation.svg" alt="">
+							<p>58 Rue de Monceau
+								<br>
+								75008 Paris</p>
+						</li>
+						<li class="flex items__center">
+							<img src="/img/localisation.svg" alt="">
+							<p>52 rue du colombier
+								<br>
+								69007 Lyon</p>
+						</li>
+						<li class="flex items__center">
+							<img src="/img/phone2.svg" alt="">
+							<a href="tel: 0478962757">04 78 96 27 57</a>
+						</li>
+						<li class="flex items__center">
+							<img src="/img/email.svg" alt="">
+							<a href="mailto: contact@umeo.consulting">contact@umeo.consulting</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+        ` : footer.innerHTML = `
+        <div class="contained flex items__center justify__between mobile__col">
+				<div class="w__third mobile__full">
+					<img id="footer__logo" src="/img/logo.png" alt="">
+				</div>
+				<div class="w__third mobile__full">
+					<ul id="footer__menu" class="flex flex__column mobile__items__center">
+						<li>
+							<a href="/en/page/rejoindre.html">Join us</a>
+						</li>
+
+						<li>
+							<a href="/en/page/metiers.html">Services</a>
+						</li>
+                        <li>
+							<a href="/en/page/rencontre.html">Let's meet</a>
+						</li>
+						<li>
+							<a href="/">
+								About us</a>
 						</li>
 					</ul>
 				</div>
@@ -321,6 +418,20 @@ window.addEventListener('DOMContentLoaded', () => {
                         }
                 })
             })
+        }
+
+        //Gestion langues
+        const switchLang = (locale) => {
+            locale == 'en' ? window.location.href = "/en" : window.location.href = "/";
+        }
+
+        const GbFlag = document.getElementById('gb_flag');
+        if(GbFlag){
+            GbFlag.addEventListener('click', () => switchLang('en'))
+        }
+        const FrFlag = document.getElementById('french_flag');
+        if(FrFlag){
+            FrFlag.addEventListener('click', () => switchLang('fr'))
         }
     }
 
