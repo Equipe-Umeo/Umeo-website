@@ -1342,9 +1342,10 @@ form{
 
 #french_flag{
     position: fixed;
-    top: 25px;
-    right: 50px;
+    bottom: 25px;
+    left: 20px;
     height: 25px;
+    z-index: 999;
     cursor: pointer;
     @media (max-width: 800px) {
         
@@ -1353,9 +1354,10 @@ form{
 
 #gb_flag{
     position: fixed;
-    top: 25px;
-    right: 80px;
+    bottom: 25px;
+    left: 50px;
     cursor: pointer;
+    z-index: 999;
     height: 25px;
     @media (max-width: 800px) {
        
