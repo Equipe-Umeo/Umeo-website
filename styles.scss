@@ -418,6 +418,10 @@ header{
     margin-top: 100px;
 }
 
+.mt__150{
+    margin-top: 150px;
+}
+
 .mb__10{
     margin-bottom: 10px;
 }
@@ -1459,7 +1463,7 @@ form{
     background-color: $dark-green;
     padding: 10px;
     text-align: center;
-    z-index: 1000;
+    z-index: 800;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     display: flex;

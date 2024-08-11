@@ -125,14 +125,14 @@ window.addEventListener('DOMContentLoaded', () => {
             </li>
 
             <li class="button white__bg black__text workbench-bold">
-                <a id="fondation" class="menu__item" href="/en/page/fondation.html"> The fundation <img src="/img/earth_icon_svg.svg" alt="icon planete terre"></a>
+                <a id="fondation" class="menu__item" href="/en/page/fondation.html"> Our foundation <img src="/img/earth_icon_svg.svg" alt="icon planete terre"></a>
             </li>
         </ul>
         <div id="cookie-banner">
-            <p class="white__text mt__20">En sélectionnant « Accepter », vous autorisez Umeo à utiliser des cookies et à partager vos données. Nous utilisons des cookies et des outils similaires pour mesurer l'audience de notre site (nombre de visites, navigateur utilisé, etc...)</p>
+            <p class="white__text mt__20">By selecting « Accept », you authorize Umeo to use cookies and to share your data. We use cookies and similar tools to masure the audience of our site (numbers of visits, browser used,...)</p>
             <div class="flex w__full justify__center">
-                <button class="button yellow__bg white__text mr__20" id="accept-cookies">Accepter</button>
-                <button class="button white__bg black__border black__text workbench-bold" id="decline-cookies">Refuser</button>
+                <button class="button yellow__bg white__text mr__20" id="accept-cookies">Accept</button>
+                <button class="button white__bg black__border black__text workbench-bold" id="decline-cookies">Refuse</button>
             </div>
         </div>
         `
