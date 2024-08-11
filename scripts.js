@@ -74,10 +74,6 @@ window.addEventListener('DOMContentLoaded', () => {
             <li>
                 <a id="rencontre" class="menu__item" href="/page/rencontre.html">Rencontrons-nous</a>
             </li>
-
-            <li>
-                <a id="rencontre" class="menu__item" href="/page/blog.html">Blog</a>
-            </li>
             
             <li class="button yellow__bg white__text">
                 <a id="rejoindre" class="menu__item" href="/page/rejoindre.html">Rejoins-nous</a>
@@ -114,10 +110,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
             <li>
                 <a id="rencontre" class="menu__item" href="/en/page/rencontre.html">Let's meet</a>
-            </li>
-
-            <li>
-                <a id="rencontre" class="menu__item" href="/en/page/blog.html">Blog</a>
             </li>
             
             <li class="button yellow__bg white__text">
