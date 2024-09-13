@@ -241,12 +241,14 @@ window.addEventListener('DOMContentLoaded', () => {
         // Vérifier si l'utilisateur a déjà donné son consentement
         if (localStorage.getItem('cookiesAccepted') === 'true') {
             loadGoogleTagManager();
+            loadGoogleAnalytics()
             cookieBanner.style.display = 'none';
         }
 
         acceptButton.addEventListener('click', function () {
             localStorage.setItem('cookiesAccepted', 'true');
             loadGoogleTagManager();
+            loadGoogleAnalytics()
             cookieBanner.style.display = 'none';
         });
 
@@ -260,7 +262,25 @@ window.addEventListener('DOMContentLoaded', () => {
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','G-07GQZXR4PM');
+            })(window,document,'script','dataLayer','GTM-T9M4MC65');
+        }
+
+        function loadGoogleAnalytics() {
+            (function(i,s,o,g,r,a,m){
+                i['GoogleAnalyticsObject']=r;
+                i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments);
+                },i[r].l=1*new Date();
+                a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];
+                a.async=1;
+                a.src=g;
+                m.parentNode.insertBefore(a,m);
+            })(window,document,'script','https://www.googletagmanager.com/gtag/js?id=G-07GQZXR4PM','gtag');
+        
+            gtag('js', new Date());
+        
+            gtag('config', 'G-07GQZXR4PM'); // Remplacez 'G-07GQZXR4PM' par votre identifiant GA4.
         }
     }
 
