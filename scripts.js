@@ -141,9 +141,8 @@ window.addEventListener('DOMContentLoaded', () => {
         footer.classList.add("dark__green__bg")
         lang == 'fr' ? footer.innerHTML = `
         <div class="contained flex items__center justify__between mobile__col">
-				<div class="w__third mobile__full flex justify__center align__center mobile__col">
+				<div class="w__third mobile__full flex justify__center items__center mobile__col">
 					<img id="footer__logo" src="/img/logo.png" alt="">
-					<img id="footer__a3p" src="/img/logo_a3p.png" alt="">
 				</div>
 				<div class="w__third mobile__full">
 					<ul id="footer__menu" class="flex flex__column mobile__items__center">
@@ -186,6 +185,9 @@ window.addEventListener('DOMContentLoaded', () => {
 							<a href="mailto: contact@umeo.consulting">contact@umeo.consulting</a>
 						</li>
 					</ul>
+				</div>
+                <div class="w__third mobile__full flex justify__center items__center mobile__col">
+					<img id="footer__a3p" src="/img/logo_a3p.png" alt="">
 				</div>
 			</div>
         ` : footer.innerHTML = `
