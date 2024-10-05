@@ -74,6 +74,10 @@ window.addEventListener('DOMContentLoaded', () => {
             <li>
                 <a id="rencontre" class="menu__item" href="/page/rencontre.html">Rencontrons-nous</a>
             </li>
+
+            <li>
+                <a id="blog" class="menu__item" href="/page/blog.html">Blog</a>
+            </li>
             
             <li class="button yellow__bg white__text">
                 <a id="rejoindre" class="menu__item" href="/page/rejoindre.html">Rejoins-nous</a>
@@ -111,7 +115,7 @@ window.addEventListener('DOMContentLoaded', () => {
             <li>
                 <a id="rencontre" class="menu__item" href="/en/page/rencontre.html">Let's meet</a>
             </li>
-            
+
             <li class="button yellow__bg white__text">
                 <a id="rejoindre" class="menu__item" href="/en/page/rejoindre.html">Join us</a>
             </li>
@@ -132,12 +136,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const footer = document.getElementsByTagName("footer")[0];
     if(footer){
-        footer.classList.add("p__40")
+        footer.classList.add("p__y__50")
         footer.classList.add("w__full")
         footer.classList.add("dark__green__bg")
         lang == 'fr' ? footer.innerHTML = `
         <div class="contained flex items__center justify__between mobile__col">
-				<div class="w__third mobile__full">
+				<div class="w__third mobile__full flex justify__center items__center mobile__col">
 					<img id="footer__logo" src="/img/logo.png" alt="">
 				</div>
 				<div class="w__third mobile__full">
@@ -181,6 +185,9 @@ window.addEventListener('DOMContentLoaded', () => {
 							<a href="mailto: contact@umeo.consulting">contact@umeo.consulting</a>
 						</li>
 					</ul>
+				</div>
+                <div class="w__third mobile__full flex justify__center items__center mobile__col">
+					<img id="footer__a3p" src="/img/logo_a3p.png" alt="">
 				</div>
 			</div>
         ` : footer.innerHTML = `
