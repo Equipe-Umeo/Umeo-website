@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umeo - Data integrity</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/swup@4"></script>
+    <script defer src="https://unpkg.com/@swup/slide-theme@2"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script defer src="/scripts.js"></script>
+    <meta name="view-transition" content="same-origin" />
+    <meta name="description" content="Page de détail d'un article">
+    <meta name="keywords"
+        content="Umeo, consulting, conseil, pharma, pharmacie, expert, expertise, pharmaceutique, blog, articles, actualités, news">
+
+</head>
+<div id="mouse"></div>
+
+<body>
+    <header></header>
+    <main id="swup" class="transition-fade">
+        <div id="article-detail">
+            <section class="relative w__full contained mb__50">
+                <h1 class="text__center mb__50">
+                    Enjeux et Défis de <br>
+                    <span class="yellow__text">l’IA</span>
+                </h1>
+                <strong class="text__center">
+                    <p>
+                        L’Intelligence Artificielle (IA) est partout dans nos téléphones, nos télés, nos réfrigérateurs,
+                        mais qu’en est-il du domaine pharmaceutique ? Les enjeux et les bénéfices sont importants, mais
+                        quels sont les défis imposés par la réglementation et les risques liés au produit et à la santé
+                        du patient ?
+                        Dans cet article, nous reviendrons sur l’IA et notamment son impact sur la validation des
+                        systèmes informatisés.
+
+                    </p>
+                </strong>
+                <h3 class="">Mais qu’est-ce que
+                    <span class="ligh__green__text workbench-bold">l’IA ?</span>
+                </h3>
+                <p>
+                    L’IA est une interconnexion de réseaux de neurones dont le but est d’imiter le fonctionnement du
+                    cerveau humain.
+                    Un neurone artificiel est une fonction complexe permettant d’analyser des données complexes, de les
+                    pondérer afin de fournir une réponse la plus probable.
+                </p>
+                <img src="/img/shema-ia.png" alt="shema fonctionnement IA">
+                <p>Suivant l’organisation des neurones dans le réseau, l’IA sera plus ou moins pertinente pour la
+                    reconnaissance d’images, la génération de texte, …</p>
+                <h3 class="">Programme et
+                    <span class="ligh__green__text workbench-bold">l’IA ?</span>
+                </h3>
+                <p>Une application est le résultat de la programmation d’un développeur suivant un algorithme et afin de
+                    répondre à un comportement souhaité décrit par les User Requirements Specification (URS) et ce
+                    programme fournira toujours la même réponse pour une même entrée donnée.
+                    On parle alors de <span class="ligh__green__text workbench-bold">réponse déterministe</span>.
+                </p>
+                <p>
+                    Une IA est quant à elle le résultat de l’entraînement d’un modèle avec des données d’entrée et de
+                    sortie. Il est ainsi possible de lui faire apprendre à reconnaitre un chat en lui montrant des
+                    photos de chat (<span class="ligh__green__text workbench-bold">données d’entrée</span>) identifiées
+                    comme étant un chat (<span class="ligh__green__text workbench-bold">donnée de sortie)</span>.
+                    Le modèle entrainé sera alors capable de reconnaitre un chat avec plus ou moins de chances en
+                    fonction de la quantité de données qu’il aura apprise.
+                    On parle alors de <span class="ligh__green__text workbench-bold">réponse probabiliste</span>.
+                </p>
+                <p>
+                    On devine les possibilités et les limites d’une IA par rapport à un programme classique. L’IA sera
+                    capable de traiter un plus large spectre de données mais avec plus ou moins de résultat suivant
+                    l’apprentissage
+                </p>
+
+                <h3 class="">Domaine d'application de
+                    <span class="ligh__green__text workbench-bold">l’IA ?</span>
+                </h3>
+                <p>En reprenant la définition d’une IA et en réfléchissant à sa différence avec une application, on
+                    devine que l’IA peut être utilisée sur l’ensemble du cycle de vie du médicament dans le cas où le
+                    nombre de données d’entrée à traiter est trop important pour une application classique dont
+                    l’algorithme a été conçu pour traiter un nombre limité de données bien spécifiques.
+                    <br> Elle pourrait être utiliser :
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            Pour recruter des patients en amont des essais cliniques,
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Pour optimiser un processus de production,
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Réaliser de l’inspection visuelle à la sortie d’une ligne de production
+                        </p>
+                    </li>
+                </ul>
+                <h3 class="">Les données - un enjeu pour
+                    <span class="ligh__green__text workbench-bold">l’IA</span>
+                </h3>
+                <p>
+                    Ces 3 cas d’utilisation de l’IA permettent de nous donner une idée de l’importance des données et de
+                    leur traitement avant qu’elles ne servent à entrainer le modèle d’IA.
+                </p>
+                <p>En effet, si des données comportent des informations personnelles il est nécessaire alors de les
+                    anonymiser afin de respecter le RGPD. Il est aussi important pour l’entreprise d’avoir digitalisé
+                    ses processus afin d’avoir une quantité suffisante de données pour entrainer le modèle d’IA. Ces
+                    données doivent également être intègres, de qualité mais aussi triées.</p>
+
+                <h3 class="">La réglementation et
+                    <span class="ligh__green__text workbench-bold">l’IA</span>
+                </h3>
+                <p>Sur ce point, l’arsenal réglementaire existant (Annex 11 pour l’Europe ou la Part 11 pour les USA)
+                    nous permet de valider dans l’état une intelligence artificielle. Les principes suivants décrits
+                    dans ces 2 textes réglementaires suffisent :</p>
+                <ul>
+                    <li>
+                        <p>
+                            L’automatisation d’un processus ne doit pas apporter de risque supplémentaire
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Une approche risque est nécessaire afin de prouver que le système mis en place prend en
+                            compte la sûreté du patient, l’intégrité des données et la qualité du produit.
+                        </p>
+                    </li>
+                </ul>
+                <p>De plus l’Europe a publié l’AI Act en 2024. Une approche « <span
+                        class="ligh__green__text workbench-bold">Critical Thinking </span> » y est définie et 4
+                    niveaux de risques sont décrits pour l’IA en prenant en compte la santé du patient, la transparence
+                    concernant l’apprentissage et la validation du modèle et la qualité des données.</p>
+
+                <h3 class=""><span class="ligh__green__text workbench-bold">l’IA</span> et validation – un défi</h3>
+                <p>La FDA a publié en 2019 une guidance « Proposed Regulatory Framework for Modifications to Artificial
+                    Intelligence/Machine Learning (AI/ML) – Based Software as a Medical Device (SaMD) § Discussion Paper
+                    and Request for Feedback” proposant une première approche pour la validation d’une IA.
+                    L’ISPE dans la 2nd édition du GAMP®5 propose également une approche similaire.
+                </p>
+                <img src="/img/shema-agile.png" alt="shema process validation">
+
+                <p><span class="ligh__green__text workbench-bold">Le grand défi de la validation d’une IA est dans un
+                        premier temps de valider un modèle entrainé sur des
+                        données non biaisées et dans un second temps de maintenir son état valider alors qu’une IA est
+                        censée
+                        auto-apprendre avec les données live.
+                    </span></p>
+
+                <p>Pour cela, les grandes idées de l’approche de validation sont :</p>
+                <ul>
+                    <li>
+                        <p>
+                            Un traitement et une validation des données incluant leur nettoyage, transformation et
+                            préparation. Le but étant d’avoir des données intègres et de qualité représentant le mieux
+                            possible les processus, il faut éviter les biais qui orienterait l’apprentissage dans une
+                            mauvaise direction.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Il faut séparer les jeux de données en données de <span
+                                class="ligh__green__text workbench-bold">training, validation et test</span>. Les
+                            données de <span class="ligh__green__text workbench-bold">training</span> sont utilisées
+                            pour entrainer le modèle et réaliser le fine tuning des
+                            paramètres. Les données de <span class="ligh__green__text workbench-bold">validation</span>
+                            sont là pour tester le modèle lors de ces phases
+                            itératives d’apprentissage. <br>
+                            Les données de test doivent être indépendantes de cette phase itérative afin de tester le
+                            modèle final dans son environnement intégré.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Une phase de design va permettre de définir le modèle plus adapté avant l’entrainement et
+                            de le spécifier en toute transparence.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Une fois le modèle en production, <span class="ligh__green__text workbench-bold">sa
+                                performance sera suivie au travers d’indicateur</span>. Au
+                            fur et à mesure que les données de production seront disponibles, le modèle pourra être
+                            enrichi et tester en fonction de la mesure des indicateurs.
+                            Cette phase d’enrichissement doit se faire au travers de change control afin de contrôler
+                            l’entrainement et l’évolution du modèle avec les données de production.
+                        </p>
+                    </li>
+                </ul>
+                <br>
+                <strong class="text__center">
+                    <p>
+                        S’il ne fallait retenir que 3 points essentiels pour la mise en place d’une IA dans un
+                        environnement pharmaceutique réglementé, ce serait : <br>
+                        <span class="yellow__text workbench-bold">
+                            • Il faut au préalable avoir à disposition un jeu de données en quantité et qualité
+                            suffisante
+                            afin de représenter au mieux le processus. <br>
+                            • Ne pas tester le modèle avec le même jeu de données d’apprentissage. <br>
+                            • Limiter et contrôler l’apprentissage du modèle une fois que celui-ci est en production
+                            afin de
+                            maintenir l’état validé de l’IA.
+                        </span>
+
+                    </p>
+                </strong>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
