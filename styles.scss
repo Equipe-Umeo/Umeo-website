@@ -478,6 +478,10 @@ header{
     height: 100%;
 }
 
+.max__w__full{
+    max-width: 100%;
+}
+
 .w__full{
     width: 100%;
 }
@@ -587,6 +591,9 @@ p{
     margin-bottom: 20px;
     span{
         font-weight: bold;
+    }
+    a{
+        color: $blue;
     }
 }
 
