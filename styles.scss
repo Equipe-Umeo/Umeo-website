@@ -111,6 +111,17 @@ body {
   0%{ transform: translate(-50%,-50%) scale(1); opacity:1; }
 }
 
+sup{
+    vertical-align: super;
+    font-size: 10px;
+}
+
+h3{
+    sup{
+        font-size: 15px;
+    }
+}
+
 //Menu
 header{
     z-index: 99;
@@ -383,6 +394,10 @@ header{
 
 .m__10{
     margin: 10px;
+}
+
+.mt__-40{
+    margin-top: -40px;
 }
 
 .mt__20{
@@ -1291,6 +1306,11 @@ form{
     z-index: -1;
 }
 
+.pyramide{
+    object-fit: contain;
+    width: 100%;
+}
+
 .metier__illustration{
     object-fit: cover;
     height: 100%;
@@ -1578,4 +1598,11 @@ p{
 
 #footer__a3p{
     width: 70%;
+}
+
+.document__downloader{
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;    
+    padding: 30px 10px 10px 10px; 
 }
