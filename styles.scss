@@ -5,6 +5,7 @@ $blue:#6193C2;
 $pink: #FFB6B6;
 $apple-green: #CDFFB6;
 $salmon: #FFDDB6;
+$red: #D62828;
 
 @font-face {
     font-family: workbench-bold;
@@ -349,6 +350,13 @@ header{
     color: $dark-green !important;
     a{
         color: $dark-green !important;
+    }
+}
+
+.red__text{
+    color: $red !important;
+    a{
+        color: $red !important;
     }
 }
 
