@@ -1,0 +1,34 @@
+/* Styles de la page L'équipe */
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 40px 20px;
+}
+.team__grid .team__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+.team__grid .team__card h3 {
+  margin: 0;
+}
+.team__grid .team__card p {
+  text-align: center;
+  margin-top: 5px;
+}
+.team__grid .team__photo {
+  width: 260px;
+  max-width: 100%;
+}
+.team__grid .team__photo img {
+  width: 100%;
+}
+.team__grid .team__photo .team__portrait {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+}

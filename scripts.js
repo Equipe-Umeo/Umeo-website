@@ -1,4 +1,3 @@
-
 window.addEventListener('DOMContentLoaded', () => {
 
     //Style du curseur avec le point qui suit
@@ -69,6 +68,10 @@ window.addEventListener('DOMContentLoaded', () => {
             
             <li>
                 <a id="metier" class="menu__item" href="/page/metiers.html">Nos services</a>
+            </li>
+
+            <li>
+                <a id="equipe" class="menu__item" href="/page/equipe.html">L'équipe</a>
             </li>
 
             <li>
@@ -152,6 +155,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 						<li>
 							<a href="/page/metiers.html">Nos services</a>
+						</li>
+                        <li>
+							<a href="/page/equipe.html">L'équipe</a>
 						</li>
                         <li>
 							<a href="/page/rencontre.html">Rencontrons-nous</a>
@@ -367,41 +373,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if(menuItems){
             const currentUrl = window.location.href;
-            if(currentUrl.indexOf("metiers") !== -1){
-                menuItems.forEach((element, index) => {
-                    if(index !== 1){
-                        element.classList.remove("active");
-                    } else {
-                        element.classList.add("active");
-                    }
-                })
-            }
-            if(currentUrl.indexOf("rejoindre") !== -1){
-                menuItems.forEach((element, index) => {
-                    element.classList.remove("active");
-                })
-            } 
-            if(currentUrl.indexOf("rencontre") !== -1){
-                menuItems.forEach((element, index) => {
-                    if(index !== 2){
-                        element.classList.remove("active");
-                    } else {
-                        element.classList.add("active");
-                    }
-                })
-            }
-            if(currentUrl.indexOf("fondation") !== -1){
-                menuItems.forEach((element, index) => {
-                    element.classList.remove("active");
-                })
-            } 
-            if(currentUrl.indexOf("blog") !== -1){
-                menuItems.forEach((element, index) => {
-                    if(index !== 3){
-                        element.classList.remove("active");
-                    } else {
-                        element.classList.add("active");
-                    }
+            // Associe un morceau d'URL à l'id du lien de menu à activer (null = aucun)
+            const activeRules = [
+                ["metiers", "metier"],
+                ["equipe", "equipe"],
+                ["rencontre", "rencontre"],
+                ["blog", "blog"],
+                ["rejoindre", null],
+                ["fondation", null],
+            ];
+            const rule = activeRules.find(([urlPart]) => currentUrl.indexOf(urlPart) !== -1);
+            if(rule){
+                menuItems.forEach(element => {
+                    element.classList.toggle("active", element.id === rule[1]);
                 })
             }
 
