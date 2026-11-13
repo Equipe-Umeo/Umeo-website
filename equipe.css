@@ -64,3 +64,10 @@
 .team__expertise li {
   line-height: 1.4;
 }
+.team__grid .team__card .team__domain {
+  max-width: 280px;
+  line-height: 1.4;
+}
+.team__directors {
+  margin-top: 40px;
+}
