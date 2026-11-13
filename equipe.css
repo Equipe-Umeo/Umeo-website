@@ -72,18 +72,14 @@
   margin-top: 40px;
 }
 
-/* Une équipe survitaminée (deux fiches côte à côte) */
-#image-carousel .splide__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-#image-carousel .splide__slide {
-  width: 460px !important;
-  max-width: 100%;
-}
 
+/* Photo décalée au survol (direction) */
+.team__card > .team__photo:hover .normal_img {
+  opacity: 0;
+}
+.team__card > .team__photo:hover .crazy_img {
+  opacity: 1;
+}
 .team__grid .team__card .team__pitch {
   margin-top: 15px;
   max-width: 320px;
