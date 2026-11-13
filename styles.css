@@ -1640,3 +1640,56 @@ form ::-webkit-file-upload-button { /* Safari + Chrome + Opera + Edge */
   margin-top: 6px;
   font-weight: normal;
 }
+
+/* ===== Page Formations ===== */
+.training__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+.training__card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.training__card h4 {
+  font-size: 22px;
+  line-height: 1.25;
+  margin: 0 0 12px 0;
+}
+.training__meta {
+  display: inline-block;
+  align-self: flex-start;
+  background: #FFBB33;
+  color: #105B63;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 14px;
+  margin: 0 0 14px 0;
+}
+.training__desc {
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+}
+.training__for {
+  font-size: 0.92em;
+  line-height: 1.45;
+  margin: 0 0 20px 0;
+}
+.training__btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+main #metiers ul.training__grid li.training__card {
+  width: auto;
+}
+main #metiers ul.training__grid li.training__card::before {
+  content: none;
+  display: none;
+}
