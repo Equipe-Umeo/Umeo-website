@@ -1614,3 +1614,98 @@ p{
     border-radius: 10px;    
     padding: 30px 10px 10px 10px; 
 }
+/* ===== Page L'équipe ===== */
+/* Styles de la page L'équipe */
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 40px 20px;
+}
+.team__grid .team__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+.team__grid .team__card h3 {
+  margin: 0;
+}
+.team__grid .team__card p {
+  text-align: center;
+  margin-top: 5px;
+}
+.team__grid .team__photo {
+  width: 260px;
+  max-width: 100%;
+}
+.team__grid .team__photo img {
+  width: 100%;
+}
+.team__grid .team__photo .team__portrait {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+/* Directeurs techniques */
+.team__intro {
+  margin: 10px auto 40px;
+}
+.team__grid .team__card .team__role {
+  font-weight: bold;
+  margin-top: 5px;
+}
+.team__expertise {
+  margin-top: 10px;
+  max-width: 300px;
+}
+.team__expertise li {
+  font-size: 0.95em;
+  margin-bottom: 6px;
+}
+.team__initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #105B63;
+  color: white;
+  font-size: 48px;
+}
+.team__grid.team__directors {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  justify-content: center;
+}
+.team__expertise li {
+  line-height: 1.4;
+}
+.team__grid .team__card .team__domain {
+  max-width: 280px;
+  line-height: 1.4;
+}
+.team__directors {
+  margin-top: 40px;
+}
+
+
+/* Photo décalée au survol (direction) */
+.team__card > .team__photo:hover .normal_img {
+  opacity: 0;
+}
+.team__card > .team__photo:hover .crazy_img {
+  opacity: 1;
+}
+.team__grid .team__card .team__pitch {
+  margin-top: 15px;
+  max-width: 320px;
+  line-height: 1.5;
+}
+.team__footnote {
+  display: block;
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 6px;
+  font-weight: normal;
+}
