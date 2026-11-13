@@ -1693,3 +1693,6 @@ main #metiers ul.training__grid li.training__card::before {
   content: none;
   display: none;
 }
+.training__grid.training__grid--wide {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 520px));
+}
